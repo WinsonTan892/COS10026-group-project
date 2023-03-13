@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Application Form"/>
+		<meta name="author" content="Winson Tan"/>
+		<link rel="stylesheet" href="style.css"/>
+		<title>Application Form</title>
+	</head>
+	<body>
+		<h1 id="'title">Application Form</h1>
+		<p id="description"></p>
+		<form id="application form">
+			<fieldset>
+
+				<label id="job-reference-number-label">Job reference number:
+					<input id="job-reference-number" type="text" placeholder="Enter your job reference number" required/>
+				</label><br>
+
+				<label id="first-name-label">First name:
+					<input id="first-name" type="text" placeholder="Enter your first name" required/>
+				</label><br>
+
+				<label id="last-name-label">Last name:
+					<input id="last-name" type="text" placeholder="Enter your last name" required/>
+				</label><br>
+
+				<label id="dob-label">Date of birth:
+					<input id="dob" type="date" placeholder="DD/MM/YYYY" required/>
+				</label><br>
+
+				<label id="gender-label">Gender:</label><br>
+				<label id="male-label"><input id="male" type="radio" name="gender"/>Male</label><br>
+				<label id="female-label"><input id="female" type="radio" name="gender"/>Female</label><br>
+				<label id="nb-label"><input id="nb" type="radio" name="gender"/>Non-binary</label><br>
+
+				<label id="address-label">Address:
+					<input required/>
+				</label><br>
+
+				<label id="suburb-label">Suburb:
+					<input required/>
+				</label><br>
+
+				<label id="state-label">State:
+					<select id="dropdown" name="state" required>
+						<option>(choose one)</option>
+						<option>VIC</option>
+						<option>NSW</option>
+						<option>QLD</option>
+						<option>NT</option>
+						<option>WA</option>
+						<option>SA</option>
+						<option>TAS</option>
+						<option>ACT</option>
+					</select>
+				</label><br>
+
+				<label id="postcode-label">Postcode:
+					<input id="postcode" type="number" min="0" max="9999" placeholder="Enter your postcode" required/>
+				</label><br>
+
+				<label id="email-label">Email:
+					<input id="email" type="email" placeholder="Enter your email:" required/>
+				</label><br>
+
+				<label id="phone-number">Phone number:
+					<input type="number" min="10000000" max="999999999999" placeholder="Enter your phone number" required/>
+				</label><br>
+				
+				<p>Skills:</p>
+				<label><input type="checkbox"/>VicRoads forklift certified</label><br>
+				<label><input type="checkbox"/>Valorant Diamond</label><br>
+				<label><input type="checkbox"/>spongbob</label><br>
+				<label><input type="checkbox"/>Actually knows how to play the Sicilian</label><br>
+				<label><input type="checkbox"/>Owns an Airbus A380 (worth 445.6 million USD after tax)</label><br>
+
+				<label id="other-skills-label">Other Skills:
+					<textarea id="other-skills" rows="4" cols="40" placeholder="E.g I can bench x"></textarea>
+				</label><br>
+
+				<input id="submit" type="submit" value="Apply"/>
+
+			</fieldset>
+		</form>
+	</body>
+</html>
