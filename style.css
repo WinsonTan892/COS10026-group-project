@@ -115,14 +115,14 @@ margin-left: 140px;
 font-size: 28px; 
 padding: 0px 10px;
 }
-
 .leftbox {
 background-color: rgb(255, 255, 255);
-width: 450px;
+width: 350px;
 border: 5px solid #1E90FF;
+position: absolute; 
+left: 0px;
 padding: 40px;
 margin: 15px;
-float: left;
 background: rgb(123,211,232);
 background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
 color: #0f2852;
@@ -130,11 +130,12 @@ color: #0f2852;
 
 .rightbox {
 background-color: rgb(255, 255, 255);
-width: 450px;
+width: 350px;
 border: 5px solid darkred;
 padding: 40px;
 margin: 15px;
-float: right;
+position: absolute;
+right: 306px;
 background: rgb(123,211,232);
 background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
 color: #40081a;
@@ -165,3 +166,18 @@ background: black;
 text-align: center;
 font-family: Arial;
 position: fixed; bottom: 0; width: 100px;}
+
+.asideposition {
+position: absolute;
+right: 0; width: 295px; 
+text-align: left;
+color:white;}
+
+.vl {
+border-left: 6px solid white;
+height: 1300px;
+position: absolute;
+left: 75%;
+margin-left: -3px;
+top: 500px;
+}
