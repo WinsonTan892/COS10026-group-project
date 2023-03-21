@@ -55,8 +55,8 @@ background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rg
 /* Company logo settings */
 .companylogo {
 position: absolute;
-left: 0%;
-top:0%;
+left: 0.6%;
+top:1.35%;
 z-index: 1;
 }
 		
