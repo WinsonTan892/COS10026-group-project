@@ -181,3 +181,38 @@ left: 75%;
 margin-left: -3px;
 top: 500px;
 }
+
+/* added this on 27/03 when i updated the apply.html page*/
+hr {
+  width: 80%;
+  height: 2px;
+  color:#113f67;
+  background-color:#113f67;
+  border-width: 0;
+}
+
+nav {
+  background-color: #113f67;
+  overflow: hidden;
+  position:sticky;
+  top: 0;
+}
+
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a.active {
+  background-color: #ddd;
+  color: black;
+}
