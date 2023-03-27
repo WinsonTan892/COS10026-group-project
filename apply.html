@@ -5,31 +5,35 @@
 		<meta name="description" content="Application Form"/>
 		<meta name="author" content="Winson Tan"/>
 		<link rel="stylesheet" href="style.css"/>
-		<title>Application Form</title>
+		<title>Application Page</title>
 	</head>
 	<body>
-		<div class = "sidenav">
-			<a href = "Home_page.html">Home</a></li>
-        		<a href="about_page.html">About Us</a></li>
-        		<a href="jobs.html">Job Details</a></li>
-        		<a href="apply.html">Apply Job</a></li>
-        		<a href="#Enhancement">Enhancement</a></li>
-		</div>
+		<nav class = "topnav">
+				<a href = "index.html">Home</a>
+        		<a href="about.html">About Us</a>
+        		<a href="jobs.html">Job Details</a>
+        		<a class="active" href="apply.html">Apply Job</a>
+        		<a href="enhancements.html">Enhancement</a>
+		</nav>
 		<h1 id="'title">Application Form</h1>
 		<p id="description"></p>
-		<form id="application form">
+		<form id="application form" method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 			<fieldset>
-
+				
 				<label id="job-reference-number-label">Job reference number:
-					<input id="job-reference-number" type="text" placeholder="Enter your job reference number" required/>
+					<input id="job-reference-number" type="text" placeholder="Enter your job reference number" pattern="[a-zA-Z0-9]{5}" required/>
 				</label><br>
 
+				<hr>
+				
+				<h2>Applicant Information</h2>
+				
 				<label id="first-name-label">First name:
-					<input id="first-name" type="text" placeholder="Enter your first name" required/>
+					<input id="first-name" type="text" placeholder="Enter your first name" pattern="[a-zA-Z]{0,20}" required/>
 				</label><br>
 
 				<label id="last-name-label">Last name:
-					<input id="last-name" type="text" placeholder="Enter your last name" required/>
+					<input id="last-name" type="text" placeholder="Enter your last name" pattern="[a-zA-Z]{0,20}" required/>
 				</label><br>
 
 				<label id="dob-label">Date of birth:
@@ -42,11 +46,11 @@
 				<label id="nb-label"><input id="nb" type="radio" name="gender"/>Non-binary</label><br>
 
 				<label id="address-label">Address:
-					<input required/>
+					<input pattern=".{0,40}" required/>
 				</label><br>
 
 				<label id="suburb-label">Suburb:
-					<input required/>
+					<input pattern=".{0,40}" required/>
 				</label><br>
 
 				<label id="state-label">State:
@@ -64,16 +68,23 @@
 				</label><br>
 
 				<label id="postcode-label">Postcode:
-					<input id="postcode" type="number" min="0" max="9999" placeholder="Enter your postcode" required/>
+					<input id="postcode" type="text" pattern="[0-9]{4}" placeholder="Enter your postcode" required/>
 				</label><br>
-
+				
+				<hr>
+				
+				<h2>Contact Details</h2>
 				<label id="email-label">Email:
 					<input id="email" type="email" placeholder="Enter your email:" required/>
 				</label><br>
 
 				<label id="phone-number">Phone number:
-					<input type="number" min="10000000" max="999999999999" placeholder="Enter your phone number" required/>
+					<input type="text" pattern="[0-9\s]{8,12}" placeholder="Enter your phone number" required/>
 				</label><br>
+
+				<hr>
+				
+				<h2>Applicant Qualifications</h2>
 				
 				<p>Skills:</p>
 				<label><input type="checkbox"/>VicRoads forklift certified</label><br>
