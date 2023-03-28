@@ -42,27 +42,40 @@
          color: white;
        }
         
-        .sidenav {
-          width: 130px;
-          position: fixed;
-          z-index: 1;
-          top: 20px;
-          right: 10px;
-          background: #eee;
-          overflow-x: hidden;
-          padding: 8px 0;
-        }
-        
-        .sidenav a {
-          padding: 6px 8px 6px 16px;
-          text-decoration: none;
-          font-size: 25px;
-          color: #2196F3;
-          display: block;
-        }
+       .sidenav {
+	      list-style-type: none;
+	      margin: 0;
+	      padding: 0;
+	      width: 150px;
+	      background-color: #f1f1f1;
+	      text-align:centre;
+	      position: fixed;
+	      right: 0;
+	      top: 20%;
+	      z-index: 3;
+	      border: 2px solid black;
+       }
+
+      .sidenav a {
+       	display: block;
+	      color: #000;
+	      padding: 8px 16px;
+	      text-decoration: none;
+      }
+
+      .sidenav a.active {
+	      background-color: #1E90FF;
+	      color: white;
+      }
+
+      .sidenav a:hover:not(.active) {
+      	background-color: #555;
+	      color: white;
+      }
 
         .center  {
           text-align: center;
+
         }
 
         .left {
@@ -103,6 +116,7 @@
            padding: 40px;
            margin: 15px;
            float: left;
+           background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
         }
 
         .rightbox {
@@ -112,6 +126,7 @@
            padding: 40px;
            margin: 15px;
            float:right;
+           background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
         }
         .centerbox {
           background-color: rgb(255, 255, 255);
@@ -121,24 +136,38 @@
            margin: 15px;
            position: absolute;
            left: 13%;
-           top: 50%;
+           top: 53%;
         }
+        .float-bottom {
+	        clear:both;
+	        border-top: 4px double black;
+	        min-width: 100%;
+	        left: 0;
+	        color: white;
+	        box-sizing: border-box;
+	        box-shadow: 0 0 5px rgba (0,0,0,0.25);
+	        padding: 4px;
+	        background: black;
+	        text-align: center;
+	        font-family: Arial;
+	        position: fixed; bottom: 0; width: 100px;
+}
         </style>
     </head>
     <body>
         
      <div class="sidenav">
-          <a href="#about">About</a>
+          <a href="about_page.html">About</a>
           <a href="#services">Services</a>
           <a href="#clients">Clients</a>
           <a href="#contact">Contact</a>
      </div>
         <div class="center"><img src = "svs5 logo.png"></div>
         <div class ="centerbox">
-          <p>SVS5 is a cutting-edge software engineering company that specializes in developing innovative solutions for businesses of all sizes. Our team of highly skilled engineers has extensive experience in a wide range of programming languages and technologies, allowing us to create customized solutions tailored to the unique needs of each client.
+          <p><strong>SVS5 is a cutting-edge software engineering company that specializes in developing innovative solutions for businesses of all sizes. Our team of highly skilled engineers has extensive experience in a wide range of programming languages and technologies, allowing us to create customized solutions tailored to the unique needs of each client.
             At SVS5, we pride ourselves on our commitment to quality, reliability, and customer satisfaction. Our engineers work closely with clients to understand their specific requirements and to deliver solutions that meet or exceed their expectations. We believe that communication is key to success, and we strive to maintain an open and collaborative relationship with each of our clients throughout the development process.
             Whether you need a simple website, a complex application, or a complete software ecosystem, SVS5 has the expertise and experience to deliver results. Our team has worked with clients in a wide range of industries, from healthcare to finance to retail, and we're always eager to take on new challenges and explore new technologies.
-            So if you're looking for a reliable and innovative software engineering partner, look no further than SVS5. Contact us today to learn more about our services and to see how we can help your business succeed.
+            So if you're looking for a reliable and innovative software engineering partner, look no further than SVS5. Contact us today to learn more about our services and to see how we can help your business succeed.</strong>
             </p>
          </div>
           
@@ -146,19 +175,18 @@
              <hr>
              <br><br><br><br><br><br>
         <div class="box">
-          This is place holder text <br>
-          <button class="button button1">Apply Now!</button>
+          This is place holder text 
+          <button class="button button1"><a href = "apply.html">Apply Now!</a></button>
         </div>
         <hr>
       <p>
-        <div class=" leftbox"><h2>Software Engineer</h2><button class="button button1">View more information here!</button></div>
+        <div class=" leftbox"><h2>Software Engineer</h2><button class="button button1"><a href = "jobs.html">View more information here!</a></button></div>
          
-         <div class="rightbox"><h2>Software Engineer</h2><button class="button button1">View more information here!</button></div> 
+         <div class="rightbox"><h2>Software Engineer</h2><button class="button button1" ><a href = "jobs.html">View more information here!</a></button></div> 
         
       </p>
 
 
-
+      <div class = "float-bottom"><footer>Silicon Valley Season 5 Inc. </footer></div>
         </body>
 </HTML>
-
