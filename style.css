@@ -135,19 +135,21 @@ background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rg
   color: #40081a;
         }
 		
-		.centerbox {
-           width: 410px;
-           border: 3px solid black;
-           padding: 20px;
-           margin: 10px;
-		    background: grey;
-           text-align: center;
-		  position: absolute;
-		  top: 27%;
-		  left: 30%;
-		  color: black;
-		  font-weight:bold;
-        }
+.centerbox {
+	width: 50%;
+	border: 3px solid black;
+	padding: 20px;
+	background: grey;
+	text-align: center;
+	position: absolute;	
+	color: black;
+	margin: auto;
+	font-weight:bold;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
 		.float-bottom {
 		clear:both;
 		border-top: 4px double black;
@@ -169,15 +171,6 @@ background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rg
 		text-align: left;
 		color:white;}
 		
-		.vl {
-		border-left: 6px solid white;
-		height: 1300px;
-		position: absolute;
-		left: 77%;
-		margin-left: -3px;
-		top: 500px;
-}
-
 /* added this on 27/03 when i updated the apply.html page*/
 hr {
   width: 80%;
