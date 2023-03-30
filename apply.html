@@ -32,28 +32,28 @@
 				<h2>Applicant Information</h2>
 				
 				<label id="first-name-label">First name:
-					<input id="first-name" type="text" placeholder="Enter your first name" pattern="[a-zA-Z]{0,20}" required/>
+					<input name="first-name" id="first-name" type="text" placeholder="Enter your first name" pattern="[a-zA-Z]{0,20}" required/>
 				</label><br>
 
 				<label id="last-name-label">Last name:
-					<input id="last-name" type="text" placeholder="Enter your last name" pattern="[a-zA-Z]{0,20}" required/>
+					<input name="last-name" id="last-name" type="text" placeholder="Enter your last name" pattern="[a-zA-Z]{0,20}" required/>
 				</label><br>
 
 				<label id="dob-label">Date of birth:
-					<input id="dob" type="date" placeholder="DD/MM/YYYY" required/>
+					<input name="DOB" id="dob" type="date" placeholder="DD/MM/YYYY" required/>
 				</label><br>
 
 				<label id="gender-label">Gender:</label><br>
-				<label id="male-label"><input id="male" type="radio" name="gender"/>Male</label><br>
-				<label id="female-label"><input id="female" type="radio" name="gender"/>Female</label><br>
-				<label id="nb-label"><input id="nb" type="radio" name="gender"/>Non-binary</label><br>
+				<label id="male-label"><input id="male" type="radio" name="Male"/>Male</label><br>
+				<label id="female-label"><input id="female" type="radio" name="Female"/>Female</label><br>
+				<label id="nb-label"><input id="nb" type="radio" name="NB"/>Non-binary</label><br>
 
 				<label id="address-label">Address:
-					<input pattern=".{0,40}" required/>
+					<input name="address" pattern=".{0,40}" required/>
 				</label><br>
 
 				<label id="suburb-label">Suburb:
-					<input pattern=".{0,40}" required/>
+					<input name="suburb" pattern=".{0,40}" required/>
 				</label><br>
 
 				<label id="state-label">State:
@@ -71,18 +71,18 @@
 				</label><br>
 
 				<label id="postcode-label">Postcode:
-					<input id="postcode" type="text" pattern="[0-9]{4}" placeholder="Enter your postcode" required/>
+					<input name="postcode" id="postcode" type="text" pattern="[0-9]{4}" placeholder="Enter your postcode" required/>
 				</label><br>
 				
 				<hr>
 				
 				<h2>Contact Details</h2>
 				<label id="email-label">Email:
-					<input id="email" type="email" placeholder="Enter your email:" required/>
+					<input name="email" id="email" type="email" placeholder="Enter your email:" required/>
 				</label><br>
 
 				<label id="phone-number">Phone number:
-					<input type="text" pattern="[0-9\s]{8,12}" placeholder="Enter your phone number" required/>
+					<input name="phone-number" type="text" pattern="[0-9\s]{8,12}" placeholder="Enter your phone number" required/>
 				</label><br>
 
 				<hr>
@@ -97,7 +97,7 @@
 				<label><input type="checkbox"/>Owns an Airbus A380 (worth 445.6 million USD after tax)</label><br>
 
 				<label id="other-skills-label">Other Skills:
-					<textarea id="other-skills" rows="4" cols="40" placeholder="E.g I can bench x"></textarea>
+					<textarea name="Other-Skills" id="other-skills" rows="4" cols="40" placeholder="E.g I can bench x"></textarea>
 				</label>
 			</div>
 			<div class="submit"><input id="submit" type="submit" value="Apply"/></div>
