@@ -21,42 +21,43 @@
 			<h1 id="'title"> Application Form</h1>
 		</div>
 
-		<form id="application form" method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+		<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 			<div class="form">
-				<label id="job-reference-number-label">Job reference number:
-					<input id="job-reference-number" type="text" placeholder="Enter your job reference number" pattern="[a-zA-Z0-9]{5}" required/>
+				<label for="job-reference-number">Job reference number:
+					<input name="job-reference-number" id="job-reference-number" type="text" placeholder="Enter your job reference number" pattern="[a-zA-Z0-9]{5}" required/>
 				</label><br>
 
 				<hr>
 				
 				<h2>Applicant Information</h2>
 				
-				<label id="first-name-label">First name:
+				<label for="first-name">First name:
 					<input name="first-name" id="first-name" type="text" placeholder="Enter your first name" pattern="[a-zA-Z]{0,20}" required/>
 				</label><br>
 
-				<label id="last-name-label">Last name:
+				<label for="last-name">Last name:
 					<input name="last-name" id="last-name" type="text" placeholder="Enter your last name" pattern="[a-zA-Z]{0,20}" required/>
 				</label><br>
 
-				<label id="dob-label">Date of birth:
+				<label for="DOB">Date of birth:
 					<input name="DOB" id="dob" type="date" placeholder="DD/MM/YYYY" required/>
 				</label><br>
 
 				<label id="gender-label">Gender:</label><br>
-				<label id="male-label"><input id="male" type="radio" name="Male"/>Male</label><br>
-				<label id="female-label"><input id="female" type="radio" name="Female"/>Female</label><br>
-				<label id="nb-label"><input id="nb" type="radio" name="NB"/>Non-binary</label><br>
 
-				<label id="address-label">Address:
+				<label for="male"><input id="male" type="radio" name="gender"/>Male</label><br>
+				<label for="female"><input id="female" type="radio" name="gender"/>Female</label><br>
+				<label for="NB"><input id="NB" type="radio" name="gender"/>Non-binary</label><br>
+
+				<label for="address">Address:
 					<input name="address" pattern=".{0,40}" required/>
 				</label><br>
 
-				<label id="suburb-label">Suburb:
+				<label for="suburb">Suburb:
 					<input name="suburb" pattern=".{0,40}" required/>
 				</label><br>
 
-				<label id="state-label">State:
+				<label for="state">State:
 					<select id="dropdown" name="state" required>
 						<option>(choose one)</option>
 						<option>VIC</option>
@@ -70,18 +71,18 @@
 					</select>
 				</label><br>
 
-				<label id="postcode-label">Postcode:
+				<label for="postcode">Postcode:
 					<input name="postcode" id="postcode" type="text" pattern="[0-9]{4}" placeholder="Enter your postcode" required/>
 				</label><br>
 				
 				<hr>
 				
 				<h2>Contact Details</h2>
-				<label id="email-label">Email:
+				<label for="email">Email:
 					<input name="email" id="email" type="email" placeholder="Enter your email:" required/>
 				</label><br>
 
-				<label id="phone-number">Phone number:
+				<label for="phone-number">Phone number:
 					<input name="phone-number" type="text" pattern="[0-9\s]{8,12}" placeholder="Enter your phone number" required/>
 				</label><br>
 
@@ -90,14 +91,14 @@
 				<h2>Applicant Qualifications</h2>
 				
 				<p>Skills:</p>
-				<label><input type="checkbox"/>VicRoads forklift certified</label><br>
-				<label><input type="checkbox"/>Valorant Diamond</label><br>
-				<label><input type="checkbox"/>spongbob</label><br>
-				<label><input type="checkbox"/>Actually knows how to play the Sicilian</label><br>
-				<label><input type="checkbox"/>Owns an Airbus A380 (worth 445.6 million USD after tax)</label><br>
+				<label for=""><input type="checkbox"/>VicRoads forklift certified</label><br>
+				<label for=""><input type="checkbox"/>Valorant Diamond</label><br>
+				<label for=""><input type="checkbox"/>spongbob</label><br>
+				<label for=""><input type="checkbox"/>Actually knows how to play the Sicilian</label><br>
+				<label for=""><input type="checkbox"/>Owns an Airbus A380 (worth 445.6 million USD after tax)</label><br>
 
-				<label id="other-skills-label">Other Skills:
-					<textarea name="Other-Skills" id="other-skills" rows="4" cols="40" placeholder="E.g I can bench x"></textarea>
+				<label for="other-skills">Other Skills:
+					<textarea name="other-Skills" id="other-skills" rows="4" cols="40" placeholder="E.g I can bench x"></textarea>
 				</label>
 			</div>
 			<div class="submit"><input id="submit" type="submit" value="Apply"/></div>
