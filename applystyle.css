@@ -1,0 +1,112 @@
+* {
+  font-family: sans-serif;
+}
+
+/*For the navbar*/
+nav {
+  background-color: #113f67;
+  overflow: hidden;
+  position:sticky;
+  top: 0;
+}
+
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a.active {
+  background-color: #ddd;
+  color: black;
+}
+
+/*For the Logo and Title*/
+img {
+  width: 70% ;
+}
+.flex-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height:400px;
+  width: 900px;
+  padding-left: 100px;
+  padding-top: 50px;
+  color:rgb(82, 82, 82)
+}
+
+/*For the form in the body*/
+label {
+  display: block;
+  margin: 0.5rem 0;
+  margin-top: 10px;
+}
+
+hr {
+  width: 80%;
+  height: 2px;
+  color:#113f67;
+  background-color:#113f67;
+  border-width: 0;
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+
+form {
+  background-color: rgb(235, 250, 255);
+}
+
+.form {
+  margin:8%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+}
+
+/*For form contents*/
+label, h2, p {
+  text-align: left;
+  padding-left: 10%;
+}
+
+label[id="job-reference-number-label"] {
+  text-align: center;
+}
+
+/*For submit button*/
+
+.submit{
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+input[type=submit] {
+  width: 200px;
+  height: 50px;
+  font-size: large;
+  border-radius: 6px;
+  transition-duration: 0.5s;
+  background-color: #113f67;
+  color: white;
+  border: none;  
+  margin: 0 auto;
+}
+
+input[type=submit]:hover {
+  border-radius: 6px;
+  background-color: #ddd;
+  color: black  
+}

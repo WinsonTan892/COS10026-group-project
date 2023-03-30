@@ -4,7 +4,7 @@
 		<meta charset="utf-8"/>
 		<meta name="description" content="Application Form"/>
 		<meta name="author" content="Winson Tan"/>
-		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="applystyle.css"/>
 		<title>Application Page</title>
 	</head>
 	<body>
@@ -13,13 +13,16 @@
         		<a href="about.html">About Us</a>
         		<a href="jobs.html">Job Details</a>
         		<a class="active" href="apply.html">Apply Job</a>
-        		<a href="enhancements.html">Enhancement</a>
+        		<a href="enhancements.html">Enhancements</a>
 		</nav>
-		<h1 id="'title">Application Form</h1>
-		<p id="description"></p>
+		
+		<div class="flex-container">
+			<a href="index.html"><img src="images/svs5 logo.png"></a>
+			<h1 id="'title"> Application Form</h1>
+		</div>
+
 		<form id="application form" method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-			<fieldset>
-				
+			<div class="form">
 				<label id="job-reference-number-label">Job reference number:
 					<input id="job-reference-number" type="text" placeholder="Enter your job reference number" pattern="[a-zA-Z0-9]{5}" required/>
 				</label><br>
@@ -95,11 +98,9 @@
 
 				<label id="other-skills-label">Other Skills:
 					<textarea id="other-skills" rows="4" cols="40" placeholder="E.g I can bench x"></textarea>
-				</label><br>
-
-				<input id="submit" type="submit" value="Apply"/>
-
-			</fieldset>
+				</label>
+			</div>
+			<div class="submit"><input id="submit" type="submit" value="Apply"/></div>
 		</form>
 	</body>
 </html>
