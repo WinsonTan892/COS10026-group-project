@@ -20,44 +20,84 @@
 			<a href="index.html"><img src="images/svs5 logo.png"></a>
 			<h1 id="'title"> Application Form</h1>
 		</div>
-
+		
+		<div class="container">
 		<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-			<div class="form">
-				<label for="job-reference-number">Job reference number:
+
+			<div class="row">
+				<div class="detail-column">
+					<label for="job-reference-number">Job reference number:</label><br>
+				</div>
+				<div class="input-column">
 					<input name="job-reference-number" id="job-reference-number" type="text" placeholder="Enter your job reference number" pattern="[a-zA-Z0-9]{5}" required/>
-				</label><br>
+				</div>
+			</div>
 
-				<hr>
-				
-				<h2>Applicant Information</h2>
-				
-				<label for="first-name">First name:
+			<hr>
+
+			<h2>Applicant Information</h2>
+
+			<div class="row">
+				<div class="detail-column">
+					<label for="first-name">First name:</label><br>
+				</div>
+				<div class="input-column">
 					<input name="first-name" id="first-name" type="text" placeholder="Enter your first name" pattern="[a-zA-Z]{0,20}" required/>
-				</label><br>
+				</div>
+			</div>
 
-				<label for="last-name">Last name:
+			<div class="row">
+				<div class="detail-column">	
+					<label for="last-name">Last name:</label><br>
+				</div>
+				<div class="input-column">
 					<input name="last-name" id="last-name" type="text" placeholder="Enter your last name" pattern="[a-zA-Z]{0,20}" required/>
-				</label><br>
+				</div>
+			</div>
 
-				<label for="DOB">Date of birth:
+			<div class="row">
+				<div class="detail-column">
+					<label for="DOB">Date of birth:</label><br>
+				</div>
+				<div class="input-column">
 					<input name="DOB" id="dob" type="date" placeholder="DD/MM/YYYY" required/>
-				</label><br>
+				</div>
+			</div>
 
-				<label id="gender-label">Gender:</label><br>
-
-				<label for="male"><input id="male" type="radio" name="gender"/>Male</label><br>
-				<label for="female"><input id="female" type="radio" name="gender"/>Female</label><br>
-				<label for="NB"><input id="NB" type="radio" name="gender"/>Non-binary</label><br>
-
-				<label for="address">Address:
-					<input name="address" pattern=".{0,40}" required/>
-				</label><br>
-
-				<label for="suburb">Suburb:
-					<input name="suburb" pattern=".{0,40}" required/>
-				</label><br>
-
-				<label for="state">State:
+			<div class="row">
+				<div class="detail-column">
+					<label id="gender-label">Gender:</label><br>
+				</div>
+				<div class="input-column">
+					<label for="male"><input id="male" type="radio" name="gender"/>Male</label><br>
+					<label for="female"><input id="female" type="radio" name="gender"/>Female</label><br>
+					<label for="NB"><input id="NB" type="radio" name="gender"/>Non-binary</label><br>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="detail-column">
+					<label for="address">Address:</label><br>
+				</div>
+				<div class="input-column">
+					<input name="address" type="text" pattern=".{0,40}" placeholder="Enter your address" required/>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="detail-column">
+					<label for="suburb">Suburb:</label><br>
+				</div>
+				<div class="input-column">
+					<input name="suburb" type="text" pattern=".{0,40}" placeholder="Enter your suburb" required/>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="detail-column">
+					<label for="state">State:</label><br>
+				</div>
+				<div class="input-column">
 					<select id="dropdown" name="state" required>
 						<option>(choose one)</option>
 						<option>VIC</option>
@@ -69,39 +109,82 @@
 						<option>TAS</option>
 						<option>ACT</option>
 					</select>
-				</label><br>
-
-				<label for="postcode">Postcode:
-					<input name="postcode" id="postcode" type="text" pattern="[0-9]{4}" placeholder="Enter your postcode" required/>
-				</label><br>
-				
-				<hr>
-				
-				<h2>Contact Details</h2>
-				<label for="email">Email:
-					<input name="email" id="email" type="email" placeholder="Enter your email:" required/>
-				</label><br>
-
-				<label for="phone-number">Phone number:
-					<input name="phone-number" type="text" pattern="[0-9\s]{8,12}" placeholder="Enter your phone number" required/>
-				</label><br>
-
-				<hr>
-				
-				<h2>Applicant Qualifications</h2>
-				
-				<p>Skills:</p>
-				<label for=""><input type="checkbox"/>VicRoads forklift certified</label><br>
-				<label for=""><input type="checkbox"/>Valorant Diamond</label><br>
-				<label for=""><input type="checkbox"/>spongbob</label><br>
-				<label for=""><input type="checkbox"/>Actually knows how to play the Sicilian</label><br>
-				<label for=""><input type="checkbox"/>Owns an Airbus A380 (worth 445.6 million USD after tax)</label><br>
-
-				<label for="other-skills">Other Skills:
-					<textarea name="other-Skills" id="other-skills" rows="4" cols="40" placeholder="E.g I can bench x"></textarea>
-				</label>
+				</div>
 			</div>
-			<div class="submit"><input id="submit" type="submit" value="Apply"/></div>
+				
+			<div class="row">
+				<div class="detail-column">
+					<label for="postcode">Postcode:</label><br>				
+				</div>
+				<div class="input-column">
+					<input name="postcode" id="postcode" type="text" pattern="[0-9]{4}" placeholder="Enter your postcode" required/>
+				</div>
+			</div>
+				<br>
+				<hr>
+				<h2>Contact Details</h2>
+				
+			<div class="row">
+				<div class="detail-column">
+					<label for="email">Email:</label><br>
+				</div>
+				<div class="input-column">
+					<input name="email" id="email" type="email" placeholder="Enter your email:" required/>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="detail-column">
+					<label for="phone-number">Phone number:</label><br>
+				</div>
+				<div class="input-column">
+					<input name="phone-number" type="text" pattern="[0-9\s]{8,12}" placeholder="Enter your phone number" required/>
+				</div>
+			</div>
+				
+			<div class="row">
+				<div class="detail-column">
+					<label for="phone-number">Phone number:</label><br>
+				</div>
+				<div class="input-column">
+					<input name="phone-number" type="text" pattern="[0-9\s]{8,12}" placeholder="Enter your phone number" required/>
+				</div>
+			</div>
+
+			<br>
+
+			<hr>
+				
+			<h2>Applicant Qualifications</h2>	
+
+			<div class="row">
+				<div class="detail-column">
+					<p>Skills:</p>						
+				</div>
+				<div class="input-column">
+					<label for="teamwork"><input type="checkbox"/>Effective Teamwork</label><br>
+					<label for="problem-solving"><input type="checkbox"/>Problem Solving</label><br>
+					<label for="leadership"><input type="checkbox"/>Leadership</label><br>
+					<label for="nsc"><input type="checkbox"/>Network Security Control</label><br>
+					<label for="os"><input type="checkbox"/>High level understanding of operating systems</label><br>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="detail-column">
+					<label for="other-skills">Other Skills:</label>
+				</div>
+				<div class="input-column">
+					<textarea name="other-Skills" id="other-skills" rows="4" cols="40" placeholder="E.g I am adaptable, a fast critical thinker, etc."></textarea>
+				</div>
+			</div>
+				
+
+			<div class="submit">
+				<input id="submit" type="submit" value="Apply"/>
+			</div>
+			
 		</form>
+		</div>
+
 	</body>
 </html>
