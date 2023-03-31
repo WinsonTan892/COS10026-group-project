@@ -1,5 +1,7 @@
 * {
   font-family: sans-serif;
+  color: rgb(82, 82, 82);
+  font-size: large;
 }
 
 /*For the navbar*/
@@ -33,24 +35,25 @@ nav a.active {
 img {
   width: 70% ;
 }
+
+h1 {
+    font-size: xx-large
+}
+
 .flex-container {
   display:flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height:400px;
+  height:500px;
   width: 900px;
   padding-left: 100px;
   padding-top: 50px;
-  color:rgb(82, 82, 82)
+  color:rgb(82, 82, 82);
 }
 
 /*For the form in the body*/
-label {
-  display: block;
-  margin: 0.5rem 0;
-  margin-top: 10px;
-}
+
 
 hr {
   width: 80%;
@@ -66,7 +69,7 @@ body {
 }
 
 form {
-  background-color: rgb(235, 250, 255);
+  background-color: rgb(227, 248, 255);
 }
 
 .form {
@@ -77,20 +80,64 @@ form {
 }
 
 /*For form contents*/
-label, h2, p {
+h2, p {
   text-align: left;
   padding-left: 10%;
+}
+
+input[type=text], input[type=email], input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: rgb(227, 248, 255);
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/*formatting the column labels and rows by making them float */
+.detail-column {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.input-column {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
 label[id="job-reference-number-label"] {
   text-align: center;
 }
 
-/*For submit button*/
 
+/*For submit button*/
 .submit{
   text-align: center;
   padding-bottom: 10%;
+  padding-top: 10%;
 }
 
 input[type=submit] {
@@ -109,4 +156,12 @@ input[type=submit]:hover {
   border-radius: 6px;
   background-color: #ddd;
   color: black  
+}
+
+/*For responsiveness - colunms will stack on top instead of next to each other on small screen < 600px*/
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
