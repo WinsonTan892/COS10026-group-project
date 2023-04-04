@@ -73,56 +73,15 @@ nav a.active {
   color: black;
 }
 
-
-
-
-
 body {
 font-family: "Lato", sans-serif;
-display: flex;
 flex-wrap: wrap;
-}
-.sidenav {
-list-style-type: none;
 margin: 0;
 padding: 0;
-width: 150px;
-background-color: #f1f1f1;
-text-align:centre;
-position: fixed;
-right: 0;
-top: 20%;
-z-index: 3;
-border: 2px solid black;
 }
 
 .pagecolor {
 background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);}
-
-.sidenav a {
-display: block;
-color: #000;
-padding: 8px 16px;
-text-decoration: none;
-}
-
-.sidenav a.active {
-background-color: #1E90FF;
-color: white;
-}
-
-.sidenav a:hover:not(.active) {
-background-color: #555;
-color: white;
-}
-.companylogo {
-position: absolute;
-left: 0.6%;
-top:1.35%;
-z-index: 1;
-}
-
-
 
 	.leftbox {
 background-color: rgb(255, 255, 255);
