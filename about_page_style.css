@@ -7,7 +7,7 @@ description: about_page.html
 */
 
 body {
-    background: linear-gradient(60deg, white, lightblue);
+    background: linear-gradient(180deg, white 20%, lightblue);
     }
 #float_left {float: left;}
 #float_center {position: relative; left: 200px;}
