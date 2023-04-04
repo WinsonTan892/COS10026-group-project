@@ -73,6 +73,10 @@ nav a.active {
   color: black;
 }
 
+
+
+
+
 body {
 font-family: "Lato", sans-serif;
 flex-wrap: wrap;
@@ -80,8 +84,22 @@ margin: 0;
 padding: 0;
 }
 
+
 .pagecolor {
 background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);}
+
+
+
+
+
+.companylogo {
+position: absolute;
+left: 0.6%;
+top:1.35%;
+z-index: 1;
+}
+
+
 
 	.leftbox {
 background-color: rgb(255, 255, 255);
@@ -139,7 +157,9 @@ position: fixed; bottom: 0; width: 100px;}
 float:right;
 right: 0; width: 21%; 
 text-align: left;
-color:white;}
+color:white;
+padding-right: 15px;
+}
 
 .container {
 position: relative;
@@ -391,6 +411,8 @@ width: 130px;
   }
 }
 }
+
+
 
 /* added this on 27/03 when i updated the apply.html page*/
 hr {
