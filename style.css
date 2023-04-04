@@ -47,198 +47,196 @@ label {
 }
 /* for the apply page */
 body {
-	font-family: "Lato", sans-serif;
-	display: flex;
-	flex-wrap: wrap;
+font-family: "Lato", sans-serif;
+display: flex;
+flex-wrap: wrap;
 }
 .sidenav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 150px;
-	background-color: #f1f1f1;
-	text-align:centre;
-	position: fixed;
-	right: 0;
-	top: 20%;
-	z-index: 3;
-	border: 2px solid black;
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 150px;
+background-color: #f1f1f1;
+text-align:centre;
+position: fixed;
+right: 0;
+top: 20%;
+z-index: 3;
+border: 2px solid black;
 }
 
 .pagecolor {
-	background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);
-}
+background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);}
 
 .sidenav a {
-	display: block;
-	color: #000;
-	padding: 8px 16px;
-	text-decoration: none;
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
 }
 
 .sidenav a.active {
-	background-color: #1E90FF;
-	color: white;
+background-color: #1E90FF;
+color: white;
 }
 
 .sidenav a:hover:not(.active) {
-	background-color: #555;
-	color: white;
+background-color: #555;
+color: white;
 }
 .companylogo {
-	position: absolute;
-	left: 0.6%;
-	top:1.35%;
-	z-index: 1;
+position: absolute;
+left: 0.6%;
+top:1.35%;
+z-index: 1;
 }
 
 
 
-.leftbox {
-	background-color: rgb(255, 255, 255);
-	width: 28.5%;
-	border: 5px solid #1E90FF;
-	float: left;
-	padding: 40px;
-	margin: 15px;
-	background: rgb(123,211,232);
-	background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
-	color: #0f2852;
+	.leftbox {
+background-color: rgb(255, 255, 255);
+width: 28.5%;
+border: 5px solid #1E90FF;
+float: left;
+padding: 40px;
+margin: 15px;
+ background: rgb(123,211,232);
+background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
+color: #0f2852;
 }
-.rightbox {
-	background-color: rgb(255, 255, 255);
-	width: 28.5%;
-	border: 5px solid darkred;
-	padding: 40px;
-	margin: 15px;
-	float: left;
-	background: rgb(123,211,232);
-	background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
-	color: #40081a;
+	.rightbox {
+background-color: rgb(255, 255, 255);
+width: 28.5%;
+border: 5px solid darkred;
+padding: 40px;
+margin: 15px;
+float: left;
+background: rgb(123,211,232);
+background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
+color: #40081a;
 }
 
 .centerbox {
-	width: 50%;
-	border: 3px solid black;
-	padding: 20px;
-	background: grey;
-	text-align: center;
-	position: absolute;	
-	color: black;
-	margin: auto;
-	font-weight:bold;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 50%;
-	transform: translate(-50%, -50%);
+width: 50%;
+border: 3px solid black;
+padding: 20px;
+background: grey;
+text-align: center;
+position: absolute;	
+color: black;
+margin: auto;
+font-weight:bold;
+left: 50%;
+transform: translateX(-50%);
+top: 50%;
+transform: translate(-50%, -50%);
 }
 
 .float-bottom {
-	min-width: 100%;
-	left: 0;
-	color: white;
-	box-sizing: border-box;
-	box-shadow: 0 0 5px rgba (0,0,0,0.25);
-	padding: 4px;
-	background: black;
-	text-align: center;
-	font-family: Arial;
-	position: fixed; bottom: 0; width: 100px;
-}
+min-width: 100%;
+left: 0;
+color: white;
+box-sizing: border-box;
+box-shadow: 0 0 5px rgba (0,0,0,0.25);
+padding: 4px;
+background: black;
+text-align: center;
+font-family: Arial;
+position: fixed; bottom: 0; width: 100px;}
 
 
 .asideposition {
-	float:right;
-	right: 0; width: 21%; 
-	text-align: left;
-	color:white;
-}
+float:right;
+right: 0; width: 21%; 
+text-align: left;
+color:white;}
 
 .container {
-	position: relative;
-	width: fit-content;
-	margin: 0 auto;
-	justify-content: space-between;
+position: relative;
+width: fit-content;
+margin: 0 auto;
+justify-content: space-between;
 }
 
 img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+display: block;
+max-width: 100%;
+height: auto;
 }
 
 img#logo {
-	width: 200px;
-	height: 175px;
+width: 200px;
+height: 175px;
 }
 
 .maincontent {
-	margin-bottom: 100px; 
+margin-bottom: 100px; 
 }
-
 /* Responsive.css */
 @media only screen and (max-width: 840px) {
-	.rightbox, .leftbox {
-	width: 80%;
-	float: none;
+.rightbox, .leftbox {
+width: 80%;
+float: none;
 }
 
 
 aside {
-	flex-basis: 100%;
-	box-sizing: border-box;
-	position: relative;
+flex-basis: 100%;
+box-sizing: border-box;
+position: relative;
 }
 
 .asideposition {
-	width: 100%;
+width: 100%;
 }
 
 .centerbox {
-	width: 70%;
-	height: 60%
-	text-align: center;
+width: 70%;
+height: 60%
+text-align: center;
 }
 
-img#logo{
-	display: none;
+img#logo	{
+display: none;
 }
 }
 
 
 @media only screen and (min-width: 841px) and (max-width: 1120px) {
 img#logo {
-	display: block;
-	width: 130px;
-	height: 113.75px;
+display: block;
+width: 130px;
+height: 113.75px;
+
 }
 
 .rightbox, .leftbox {
-	width: 35%;
-	float: left;
+width: 35%;
+float: left;
 }
 
 
 
 aside {
-	flex-basis: 100%;
-	box-sizing: border-box;
-	position: relative;
+flex-basis: 100%;
+box-sizing: border-box;
+position: relative;
 }
 
 .asideposition {
-	width: 100%;
+width: 100%;
 }
 
 
 .centerbox {
-	width: 50%;
+width: 50%;
 }
 
 .sidenav {
-	width: 130px;
+width: 130px;
 }
 }
+
 
 /* added this on 27/03 when i updated the apply.html page*/
 hr {
