@@ -3,26 +3,27 @@
 <HTML>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Index</title>
         <style>
-        body {
+         body {
           font-family: "Lato", sans-serif;
           background: linear-gradient(50deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);
           
-        }
-        .verticleline {
+         }
+         .verticleline {
           border-left: 6px solid #134ecf;
           height: 500px;
           position: relative;
           left: 50%;
           margin-left: -3px;
           top: 0;
-        }
+         }
 
-        .button {
+         .button {
           border: none;
           color: white;
           padding: 16px 32px;
-          text-align: center;
           text-decoration: none;
           display: inline-block;
           font-size: 16px;
@@ -31,128 +32,123 @@
           cursor: pointer;
          }
 
-        .button1 {
+         .button1 {
           background-color: white;
           color: black;
           border: 2px solid #134ecf;
-        }
+         }
 
-        .button1:hover {
+         .button1:hover {
          background-color: #134ecf;
          color: white;
-       }
+         }
         
-       .sidenav {
-	      list-style-type: none;
-	      margin: 0;
-	      padding: 0;
-	      width: 150px;
-	      background-color: #f1f1f1;
-	      text-align:centre;
-	      position: fixed;
-	      right: 0;
-	      top: 20%;
-	      z-index: 3;
-	      border: 2px solid black;
-       }
+         .sidenav {
+	       list-style-type: none;
+	       margin: 0;
+	       padding: 0;
+	       width: 150px;
+	       background-color: #f1f1f1;
+	       text-align: center;
+	       position: fixed;
+	       right: 0;
+	       top: 20%;
+	       z-index: 3;
+	       border: 2px solid black;
+         }
 
-      .sidenav a {
-       	display: block;
-	      color: #000;
-	      padding: 8px 16px;
-	      text-decoration: none;
-      }
+         .sidenav a {
+       	 display: block;
+	       color: #000;
+	       padding: 8px 16px;
+	       text-decoration: none;
+         }
 
-      .sidenav a.active {
-	      background-color: #1E90FF;
-	      color: white;
-      }
+         .sidenav a.active {
+	       background-color: #1E90FF;
+	       color: white;
+          }
 
-      .sidenav a:hover:not(.active) {
-      	background-color: #555;
-	      color: white;
-      }
+         .sidenav a:hover:not(.active) {
+      	 background-color: #555;
+	       color: white;
+         }
 
-      .center  {
+         .center  {
           text-align: center;
           max-width:100%;
-        }
+         }
 
-        .left {
+         .left {
           text-align: left;
-        }
+         }
 
-        .right {
+         .right {
           text-align:right;
-        }
+         }
         
-        .sidenav a:hover {
+         .sidenav a:hover {
           color: #064579;
-        }
+         }
         
-        .main {
+         .main {
           margin-left: 140px; /* Same width as the sidebar + left position in px */
           font-size: 28px; /* Increased text to enable scrolling */
           padding: 0px 10px;
-        }
+         }
         
-        @media screen and (max-height: 450px) {
+         @media screen and (max-height: 450px) {
           .sidenav {padding-top: 15px;}
           .sidenav a {font-size: 18px;}
-        }
+         }
 
-        .box {
+         .box {
           background-color: lightgrey;
-           width: 550px;
-           box-shadow: 0 0 15px hsla(0deg, 0%, 0%, 0.5);
-           border: 7px solid #134ecf;
-           padding: 40px;
-           margin: 15px;
-        }
+          width: 550px;
+          border: 7px solid #134ecf;
+          padding: 40px;
+          margin: 15px;
+         }
 
-        .leftbox {
+         .leftbox {
           background-color: rgb(255, 255, 255);
-           width: 700px;
-           box-shadow: 0 0 15px hsla(0deg, 0%, 0%, 0.5);
-           border: 7px solid #134ecf;
-           padding: 40px;
-           margin: 15px;
-           float: left;
-           background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
-        }
+          width: 700px;
+          border: 7px solid #134ecf;
+          padding: 40px;
+          margin: 15px;
+          float: left;
+          background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
+         }
 
-        .rightbox {
+         .rightbox {
           background-color: rgb(255, 255, 255);
-           width: 700px;
-           box-shadow: 0 0 15px hsla(0deg, 0%, 0%, 0.5);
-           border: 7px solid #134ecf;
-           padding: 40px;
-           margin: 15px;
-           float:right;
-           background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
-        }
-        .centerbox {
+          width: 700px;
+          border: 7px solid #134ecf;
+          padding: 40px;
+          margin: 15px;
+          float:right;
+          background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
+         }
+         .centerbox {
           background-color: rgb(255, 255, 255);
-           width: 1200px;
-           box-shadow: 0 0 15px hsla(0deg, 0%, 0%, 0.5);
-           border: 7px solid #134ecf;
-           padding: 40px;
-           margin: 15px;
-           position: absolute;
-           left: 50%;
-           transform: translateX(-50%);
-           top: 66%;
-           transform: translate(-50%, -50%);
-        }
-        .float-bottom {
+          width: 1200px;
+          border: 7px solid #134ecf;
+          padding: 40px;
+          margin: 15px;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 64%;
+          transform: translate(-50%, -50%);
+         }
+         .float-bottom {
 	        clear:both;
 	        border-top: 4px double black;
 	        min-width: 100%;
 	        left: 0;
 	        color: white;
 	        box-sizing: border-box;
-	        box-shadow: 0 0 5px rgba (0,0,0,0.25);
-	        padding: 4px;
+	        padding:4px;
 	        background: black;
 	        text-align: center;
 	        font-family: Arial;
@@ -169,7 +165,7 @@
           <a href="apply.html">Apply Job</a>
           <a href="enhancements.html">Enhancements</a>
      </div>
-        <div class="center"><img src = "svs5 logo.png"></div>
+        <div class="center"><img src="svs5_logo.png"alt="Company Logo"></div>
         <div class ="centerbox">
           <p><strong>SVS5 is a cutting-edge software engineering company that specializes in developing innovative solutions for businesses of all sizes. Our team of highly skilled engineers has extensive experience in a wide range of programming languages and technologies, allowing us to create customized solutions tailored to the unique needs of each client.
             At SVS5, we pride ourselves on our commitment to quality, reliability, and customer satisfaction. Our engineers work closely with clients to understand their specific requirements and to deliver solutions that meet or exceed their expectations. We believe that communication is key to success, and we strive to maintain an open and collaborative relationship with each of our clients throughout the development process.
@@ -186,13 +182,13 @@
         <div class="box">
           <h2>Job Application</h2>
           If we approve of you application we will respond within 5 business days.
-          <button class="button button1"><a href = "apply.html">Apply Now!</a></button>
+          <a href = "apply.html"><button class="button1 button">Apply Now!</button></a>
         </div>
         <hr>
       <p>
-        <div class=" leftbox"><h2>Software Engineer</h2><p>A software engineer is a professional who specializes in the development, design, testing, and maintenance of software applications, systems, and platforms. They use a variety of programming languages, frameworks, and tools to create efficient, reliable, and scalable software solutions that meet the needs of their clients or end-users.</p><button class="button button1" ><a href = "jobs.html">View more information here!</a></button></div>
+        <div class=" leftbox"><h2>Software Engineer</h2><p>A software engineer is a professional who specializes in the development, design, testing, and maintenance of software applications, systems, and platforms. They use a variety of programming languages, frameworks, and tools to create efficient, reliable, and scalable software solutions that meet the needs of their clients or end-users.</p><a href = "jobs.html"><button class="button button1" >View more information here!</button></a></div>
          
-         <div class="rightbox"><h2>Software Engineer</h2><p>A software engineer is a professional who specializes in the development, design, testing, and maintenance of software applications, systems, and platforms. They use a variety of programming languages, frameworks, and tools to create efficient, reliable, and scalable software solutions that meet the needs of their clients or end-users.</p><button class="button button1" ><a href = "jobs.html">View more information here!</a></button></div> 
+         <div class="rightbox"><h2>Software Engineer</h2><p>A software engineer is a professional who specializes in the development, design, testing, and maintenance of software applications, systems, and platforms. They use a variety of programming languages, frameworks, and tools to create efficient, reliable, and scalable software solutions that meet the needs of their clients or end-users.</p><a href = "jobs.html"><button class="button button1" >View more information here!</button></a></div>
         
       </p>
 
