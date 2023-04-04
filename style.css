@@ -172,7 +172,64 @@ height: 175px;
 .maincontent {
 margin-bottom: 100px; 
 }
-/* Responsive.css */
+
+.leftbox, .rightbox, .asideposition {
+  position: relative;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.leftbox {
+  animation-name: slideInFromLeft;
+}
+
+.rightbox {
+  animation-name: slideInFromLeft;
+}
+
+.asideposition {
+  animation-name: slideInFromRight;
+}
+.centerbox {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
 @media only screen and (max-width: 840px) {
 .rightbox, .leftbox {
 width: 80%;
@@ -198,6 +255,60 @@ text-align: center;
 
 img#logo	{
 display: none;
+}
+.leftbox, .rightbox, .asideposition {
+  position: relative;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.leftbox {
+  animation-name: slideInFromRight;
+}
+
+.rightbox {
+  animation-name: slideInFromLeft;
+}
+
+.asideposition {
+  animation-name: slideInFromRight;
+}
+.centerbox {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 }
 
@@ -235,8 +346,61 @@ width: 50%;
 .sidenav {
 width: 130px;
 }
+.leftbox, .rightbox, .asideposition {
+  position: relative;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.leftbox {
+  animation-name: slideInFromLeft;
+}
+
+.rightbox {
+  animation-name: slideInFromRight;
+}
+
+.asideposition {
+  animation-name: slideInFromLeft;
+}
+.centerbox {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+}
 
 /* added this on 27/03 when i updated the apply.html page*/
 hr {
