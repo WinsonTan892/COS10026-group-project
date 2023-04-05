@@ -8,33 +8,33 @@
 		<title>Application Page</title>
 	</head>
 	<body>
-		<nav class = "topnav">
-				<a href = "index.html">Home</a>
+		<nav>
+				<a href="index.html">Home</a>
         		<a href="about.html">About Us</a>
         		<a href="jobs.html">Job Details</a>
         		<a class="active" href="apply.html">Apply Job</a>
         		<a href="enhancements.html">Enhancements</a>
 		</nav>
 		
-		<div class="flex-container">
+		<div class="header-container">
 			<a href="index.html"><img src="images/svs5 logo.png"></a>
-			<h1 id="'title"> Application Form</h1>
+			<h1 id="title"> Application Form</h1>
 		</div>
 		
-		<div class="container">
 		<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 
-			<div class="row">
-				<div class="detail-column">
+			<div class="JRN-row">
+				<div>
 					<label for="job-reference-number">Job reference number:</label><br>
+					<input name="job-reference-number" id="job-reference-number" type="text" placeholder="Enter job reference number" pattern="[a-zA-Z0-9]{5}" required/>
 				</div>
-				<div class="input-column">
-					<input name="job-reference-number" id="job-reference-number" type="text" placeholder="Enter your job reference number" pattern="[a-zA-Z0-9]{5}" required/>
-				</div>
+				<img src="office2.jpg" alt="Office meeting.">
 			</div>
 
+			<br>
 			<hr>
 
+			<div class="container">
 			<h2>Applicant Information</h2>
 
 			<div class="row">
@@ -66,12 +66,12 @@
 
 			<div class="row">
 				<div class="detail-column">
-					<label id="gender-label">Gender:</label><br>
+					<label for="gender">Gender:</label><br>
 				</div>
 				<div class="input-column">
-					<label for="male"><input id="male" type="radio" name="gender"/>Male</label><br>
-					<label for="female"><input id="female" type="radio" name="gender"/>Female</label><br>
-					<label for="NB"><input id="NB" type="radio" name="gender"/>Non-binary</label><br>
+					<label for="male"><input id="male" type="radio" name="gender" value="male"/>Male</label><br>
+					<label for="female"><input id="female" type="radio" name="gender" value="Female"/>Female</label><br>
+					<label for="unspecified"><input id="unspecified" type="radio" name="gender" value="unspecified"/>Unspecified</label><br>
 				</div>
 			</div>
 			
@@ -141,15 +141,6 @@
 					<input name="phone-number" type="text" pattern="[0-9\s]{8,12}" placeholder="Enter your phone number" required/>
 				</div>
 			</div>
-				
-			<div class="row">
-				<div class="detail-column">
-					<label for="phone-number">Phone number:</label><br>
-				</div>
-				<div class="input-column">
-					<input name="phone-number" type="text" pattern="[0-9\s]{8,12}" placeholder="Enter your phone number" required/>
-				</div>
-			</div>
 
 			<br>
 
@@ -159,14 +150,14 @@
 
 			<div class="row">
 				<div class="detail-column">
-					<p>Skills:</p>						
+					<label for="skills">Skills:</label>		
 				</div>
 				<div class="input-column">
-					<label for="teamwork"><input type="checkbox"/>Effective Teamwork</label><br>
-					<label for="problem-solving"><input type="checkbox"/>Problem Solving</label><br>
-					<label for="leadership"><input type="checkbox"/>Leadership</label><br>
-					<label for="nsc"><input type="checkbox"/>Network Security Control</label><br>
-					<label for="os"><input type="checkbox"/>High level understanding of operating systems</label><br>	
+					<label><input value="teamwork" name="skills[]" type="checkbox" checked/>Effective Teamwork</label><br>
+					<label><input value="problem-solving" name="skills[]" type="checkbox"/>Problem Solving</label><br>
+					<label><input value="leadership" name="skills[]" type="checkbox"/>Leadership</label><br>
+					<label><input value="nsc" name="skills[]" type="checkbox"/>Network Security Control</label><br>
+					<label><input value="os" name="skills[]" type="checkbox"/>High level understanding of operating systems</label><br>	
 				</div>
 			</div>
 			<div class="row">
@@ -177,14 +168,18 @@
 					<textarea name="other-Skills" id="other-skills" rows="4" cols="40" placeholder="E.g I am adaptable, a fast critical thinker, etc."></textarea>
 				</div>
 			</div>
-				
+			
+			<br>
+			<hr> 
 
+		</div>
 			<div class="submit">
+				<img src="meeting.jpg" alt='Image of an Office.' id="meeting">
 				<input id="submit" type="submit" value="Apply"/>
 			</div>
 			
 		</form>
-		</div>
 
 	</body>
 </html>
+
