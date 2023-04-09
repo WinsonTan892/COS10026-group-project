@@ -251,11 +251,11 @@ aside {
 flex-basis: 100%;
 box-sizing: border-box;
 position: relative;
+padding-left: 10px;
 }
 
 .asideposition {
 width: 100%;
-padding-left: 10px;
 }
 
 .centerbox {
@@ -343,11 +343,11 @@ aside {
 flex-basis: 100%;
 box-sizing: border-box;
 position: relative;
+padding-left: 10px;
 }
 
 .asideposition {
 width: 100%;
-padding-left: 10px;
 }
 
 
