@@ -131,12 +131,15 @@
           border: 7px solid #134ecf;
           padding: 40px;
           margin: 15px;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          top: 49%;
-          transform: translate(-50%, -50%);
          }
+
+         .centerboxposition{
+         position: relative;
+         top: 3%;
+         left: 20%;
+         margin: -25px 0 0 -25px
+         }
+
          .float-bottom {
 	        clear:both;
 	        border-top: 4px double black;
@@ -149,9 +152,6 @@
 	        text-align: center;
 	        font-family: Arial;
 	        position: fixed; bottom: 0; width: 100px;
-         }
-         #centerimg {
-          object-fit: scale-down;
          }
         </style>
     </head>
@@ -166,15 +166,16 @@
      </div>
 
      <div class="centerimg">
-          <img src="svs5_logo.png"alt="Company Logo">
+          <img src="images/float_center.png"alt="Company Logo">
      </div>
-
-     <div class ="centerbox">
-          <p><strong>SVS5 is a cutting-edge software engineering company that specializes in developing innovative solutions for businesses of all sizes. Our team of highly skilled engineers has extensive experience in a wide range of programming languages and technologies, allowing us to create customized solutions tailored to the unique needs of each client.
+     <div class = "centerboxposition">
+      <div class ="centerbox">
+        <p><strong>SVS5 is a cutting-edge software engineering company that specializes in developing innovative solutions for businesses of all sizes. Our team of highly skilled engineers has extensive experience in a wide range of programming languages and technologies, allowing us to create customized solutions tailored to the unique needs of each client.
             At SVS5, we pride ourselves on our commitment to quality, reliability, and customer satisfaction. Our engineers work closely with clients to understand their specific requirements and to deliver solutions that meet or exceed their expectations. We believe that communication is key to success, and we strive to maintain an open and collaborative relationship with each of our clients throughout the development process.
             Whether you need a simple website, a complex application, or a complete software ecosystem, SVS5 has the expertise and experience to deliver results. Our team has worked with clients in a wide range of industries, from healthcare to finance to retail, and we're always eager to take on new challenges and explore new technologies.
             So if you're looking for a reliable and innovative software engineering partner, look no further than SVS5. Contact us today to learn more about our services and to see how we can help your business succeed.</strong>
-            </p>
+        </p>
+      </div>
      </div>
          <br><br><br><br><br><br><br>
          <hr>
@@ -184,7 +185,7 @@
              <br><br>
         <div class="box">
           <h2>Job Application</h2>
-          If we approve of you application we will respond within 5 business days.
+          As part of our hiring process, we require all applicants to complete our job application form. This form is designed to help us understand your qualifications and experience for the position you are applying for, as well as to comply with legal requirements for employment records.
           <a href = "apply.html"><button class="button1 button">Apply Now!</button></a>
         </div>
         <hr>
