@@ -15,7 +15,7 @@
 }
 
 /* for the apply page */
-h1 {
+h1, p {
   margin: 1em auto;
   text-align: center;
 }
