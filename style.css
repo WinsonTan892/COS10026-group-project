@@ -644,37 +644,6 @@ figcaption {
 	color: white;
 }
 
-.jsidenav {
-	list-style-type: none;
-	margin 0;
-	padding: 0;
-	width: 150px;
-	background-color: #f1f1f1;
-	text-align: center;
-	position: fixed;
-	right: 0;
-	top: 20%;
-	z-index: 3;
-	border: 2px solid black;
-}
-
-.jsidenav a {
-	display: block;
-	color: #000;
-	padding: 8px 16px;
-	text-decoration: none;
-}
-
-.jsidenav a.active {
-	background-color: #1E90FF;
-	color: white;
-}
-
-.jsidenav a:hover:not(.active) {
-	background-color: #555;
-	color: white;
-}
-
 
 .jleft {
 	text-align: left;
@@ -684,9 +653,6 @@ figcaption {
 	text-align:right;
 }
 
-.jsidenav a:hover {
-	color: #064579;
-}
 
 .jmain {
 	margin-left: 140px; /* Same width as the sidebar + left position in px */
