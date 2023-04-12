@@ -644,6 +644,16 @@ figcaption {
   font-family: "Lato", sans-serif;
   background: linear-gradient(50deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
 .jverticleline {
 	border-left: 6px solid #134ecf;
 	height: 500px;
@@ -703,6 +713,7 @@ figcaption {
 	border: 7px solid #134ecf;
 	padding: 40px;
 	margin: 15px;
+	animation: fadeIn 2s ease-in-out forwards
 }
 
 .jleftbox {
@@ -713,6 +724,7 @@ figcaption {
 	margin: 15px;
 	float: left;
 	background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
+	animation: fadeIn 2s ease-in-out forwards
 }
 
 .jrightbox {
@@ -723,6 +735,7 @@ figcaption {
 	margin: 15px;
 	float:right;
 	background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
+	animation: fadeIn 2s ease-in-out forwards
 }
 .jcenterbox {
 	background-color: rgb(255, 255, 255);
@@ -730,6 +743,7 @@ figcaption {
 	border: 7px solid #134ecf;
 	padding: 40px;
 	margin: 15px;
+	animation: fadeIn 2s ease-in-out forwards
 }
 
 .jcenterboxposition{
