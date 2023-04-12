@@ -169,7 +169,7 @@ position: fixed; bottom: 0; width: 100px;}
 .asideposition {
 float:right;
 right: 0; width: 25%; 
-text-align: center;
+text-align: left;
 color:white;
 padding-right: 15px;
 padding-left: 10px;	
