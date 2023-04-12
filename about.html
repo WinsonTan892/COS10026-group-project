@@ -1,126 +1,157 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="About Us"/>
+    <meta name="author" content=""/>
+    <link rel="stylesheet" href="aboutnewstyle.css"/>
+    <title>About Us</title>
+  </head>
+  <body>
 
-<HTML lang = "en">
-    <head>
-		<meta charset="utf-8" >
-		<meta name = "description"     content="Job Description Page" >
-		<meta name = "keywords"        content="HTML" >
-		<meta name = "author"          content="Thaddeus Shu" >
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>HTML Job Description Page</title>
-    <link rel="stylesheet" href="about_page_style.css"/>
-    <style>
-        body {
-          font-family: "Lato", sans-serif;
-        }
-   
-        .sidenav {
-          width: 130px;
-          position: fixed;
-          z-index: 1;
-          top: 20px;
-          right: 10px;
-          background: #eee;
-          overflow-x: hidden;
-          padding: 8px 0;
-        }
-        
-        .sidenav a {
-          padding: 6px 8px 6px 16px;
-          text-decoration: none;
-          font-size: 17px;
-          color: #2196F3;
-          display: block;
-        }
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About Us</a>
+        <a href="jobs.html">Job Details</a>
+        <a  href="apply.html">Apply Job</a>
+        <a href="enhancements.html">Enhancements</a>
+    </nav>
 
-        .center  {
-          text-align: center;
-        }
+    <div class="header-container">
+        <h1>About Us</h1>
+        <!-- credit to https://www.image-map.net/ for generating vectors used in svg-->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 1 17 5">
+            <path d="M 1 1 C -7 1 6 5 -2 6 M 2 1 L 4 6 L 6 1 M 10 1 C 2 1 15 5 7 6 M 11 1 L 13 6 L 15 1" stroke="#abd8ff" stroke-width="0.5" fill="none"/>
+          </svg>
+    </div>
 
-        .left {
-          text-align: left;
-        }
+    <figure>
+        <!-- credit to https://www.image-map.net/ for generating coordinates used in image map-->
+      <img src="images/group cos10026.jpg" alt="Team Members - William, Thaddeus, Justin, Winson" usemap="#image-map">
+        <map name="image-map">
+            <area target="" alt="Thaddeus" title="Thaddeus" href="#Thaddeus" coords="114,561,118,505,139,461,172,423,201,399,238,376,264,363,252,331,249,302,236,274,254,230,279,208,310,199,334,210,359,210,377,227,388,248,401,268,399,291,381,313,365,339,356,361,355,375,376,392,390,411,412,425,435,441,454,465,463,490,470,509,474,528,480,549,482,561,464,561,424,561,334,561" shape="poly">
+            <area target="" alt="William" title="William" href="#William" coords="3,108,43,106,80,119,107,129,127,148,143,175,150,205,137,227,137,263,117,275,104,299,86,312,78,327,87,335,103,341,119,346,141,354,160,375,169,398,170,419,154,437,136,458,124,477,116,501,112,525,112,547,107,560,2,558" shape="poly">
+            <area target="" alt="Justin" title="Justin" href="#Justin" coords="383,398,402,372,428,358,436,355,432,337,445,327,461,326,467,326,468,317,476,313,482,312,481,297,474,283,463,278,456,257,455,245,453,217,459,200,478,182,500,169,525,166,544,172,556,183,571,189,569,213,567,231,573,237,575,253,564,275,558,295,575,298,591,312,602,324,611,331,633,335,656,341,669,348,682,368,703,391,719,411,735,431,743,449,753,467,758,478,759,504,756,542,757,561,633,561,483,558,473,517,465,483,453,461,441,444,433,431,411,422,391,410" shape="poly">
+            <area target="" alt="Winson" title="Winson" href="#Winson" coords="685,362,692,351,685,323,675,319,666,299,662,285,655,267,653,251,665,237,678,224,688,217,706,213,718,211,732,210,750,213,756,219,758,233,757,269,757,319,758,374,758,413,759,467,742,441,719,404,685,363,742,441" shape="poly">
+        </map>
+      <figcaption>Our Team Members (Click on each to find out more about them!)</figcaption>
+    </figure>
 
-        .right {
-          text-align:right;
-        }
-        
-        .sidenav a:hover {
-          color: #064579;
-        }
-        
-        .main {
-          margin-left: 140px; /* Same width as the sidebar + left position in px */
-          font-size: 28px; /* Increased text to enable scrolling */
-          padding: 0px 10px;
-        }
-                .leftbox {
-          background-color: rgb(255, 255, 255);
-           width: 450px;
-           border: 5px solid #134ecf;
-           padding: 40px;
-           margin: 15px;
-           float: left;
-        }
-		        .rightbox {
-          background-color: rgb(255, 255, 255);
-           width: 450px;
-           border: 5px solid #134ecf;
-           padding: 40px;
-           margin: 15px;
-           float: right;
-        }
-        </style>
-    </head>
-    <body>
-     <div class="sidenav">
-		<a href = "#Home">Home</a>
-          <a href="#aboutus">About Us</a>
-          <a href="#Jobdesc">Job Details</a>
-          <a href="#Jobapp">Apply Job</a>
-          <a href="#Enhancement">Enhancement</a>
-     </div>
-     <fieldset id="top_about">
-     <h1>
-      <a href="https://mercury.swin.edu.au/cos10026/s104560582/about_page/about_page.html#Home">
-      <img id="float_left" src="images/float_left.png" alt="logo"></a>
-      <a href="https://mercury.swin.edu.au/cos10026/s104560582/about_page/about_page.html#Home">
-      <img id="float_center" src="images/float_center.png" alt="Silicon Valley Season 5"></a>
-      </h1>
-    </fieldset id="top_about">
-    <br>
-    <img id="office_image_about" src="images/office_building_2.jpeg" alt="Office Building">
-    <h1 id="about_line">About Us:</h1>
     
-    <p1 id="svs5_p1_about">Silicon Valley Season Five was started in <em>1997</em> and has been actively making new technologies ever since to meet the demands of our old and new clients alike.</p1> <br><br>
-    <ol>1. We have offered a reliable service to all of our <b>35</b> current clients. <br>
-      2. We have over <b>20</b> years of experience in the industry.<br>
-      3. We offer a money back garuntee if our services are not up to your expectations. <br>
-      4. We offer consultation and flexabile fees for our customers. <br>
-  </ol>
-  <br>
-  <p1 id="charity">We are enviromentally sustainable and maintain a <em>net 0 emmisions</em>, we also give to the community though volounteering and charaties. </p1>
-    <br>
-    <br><br><br><br><br><br><br><hr id="break_about">
-    <span class="about_table">
-    <h2 id="meet_about"><b>Meet our members</b></h2>
-    <fieldset id="table_color_about">
-        <img src="images/profile_picture.png" alt="Profile Picture"><img src="images/profile_picture.png" alt="Profile Picture"><img src="images/profile_picture.png" alt="Profile Picture"><img src="images/profile_picture.png" alt="Profile Picture">
-        <table>
+    <div class="dl-container">
+        <dl>
+        <dt>Group Name</dt>
+        <dd>Silicon Valley Season 5</dd>
+        </dl>
+
+        <dl>
+        <dt>Group ID</dt>
+        <dd>Group Number 3</dd>
+        </dl>
+
+        <dl>
+        <dt>Tutor Name</dt>
+        <dd>Fatma Mohammed</dd>
+        </dl>
+
+        <dl>
+        <dt>Course</dt>
+        <dd>Bachelors in Computer Science</dd>
+        </dl>
+
+        <div class="more-about-us">
+            <h3>More about us!</h3>
+            <p>Silicon Valley Season Five was started in <em>1997</em> and has been actively making new technologies ever since to meet the demands of our old and new clients alike.
+                <ol>
+                    <li>We have offered a reliable service to all of our <b>35</b> current clients.</li>
+                    <li>We have over <b>20</b> years of experience in the industry.</li>
+                    <li>We offer a money back garuntee if our services are not up to your expectations.</li>
+                    <li>We are enviromentally sustainable and maintain a <em>net 0 emmisions</em>, we also give to the community though volounteering and charaties.</li>
+                    <li>We offer consultation and flexabile fees for our customers.</li>
+                </ol>
+                </p>
+        </div>
+    </div>
+    
+    <h2 class="timetable">Our Timetable</h2>
+
+    <table>
+        <thead>
           <tr>
-            <td style="width:21%"><a href="mailto:104560582@student.swin.edu.au">William Smallacombe</a><br><br><p2><b>Software Engineer</b></p2><br><p3>I was born in Australia and I am studying Computer Science with a major in AI.</p3></td>
-            <td style="width:21%"><a href="mailto:104544379@student.swin.edu.au">Justin Hardie</a> <br><br> <p2><b>Programer</b></p2> <br> <p3>I am from South Africa studying Computer Science with a major in Cyber Security.</p3> </td>
-            <td style="width:21%"><a href="mailto:104553786@student.swin.edu.au">Thaddeus Shu</a><br><br> <p2><b>Programer</b></p2> <br> <p3>I am from Australia studying Computer Science with a major in Cyber Security.</p3> </td>
-            <td style="width:21%"><a href="mailto:104555517@student.swin.edu.au">Winson Tan</a><br><br> <p2><b>Electrical engineer</b></p2> <br> <p3>I am from Malaysia studying Computer Science majoring in both Electrical Engineering and Software Development.</p3> </td>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
           </tr>
-        </table>
-    </fieldset id="table_color_about">
-    </span>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10:30-12:30</td>
+            <td>COS10026 Lecture </td>
+            <td>COS10009 Lecture</td>
+            <td>-</td>
+            <td>TNE10005 Lecture</td>
+            <td>TNE10006 Lecture</td>
+          </tr>
+          <tr>
+            <td>4:30-6:30</td>
+            <td>-</td>
+            <td>COS10026 Tutorial</td>
+            <td>-</td>
+            <td>-</td>
+            <td>TNE10005 Workshop</td>
+          </tr>
+          <tr>
+            <td>6:30-8:30</td>
+            <td>TNE10006 Workshop</td>
+            <td>-</td>
+            <td>-</td>
+            <td>COS10009 Tutorial</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    <div class="contact-us"> 
+        <h2>Contact Us:</h2>
+        <h2>If you have any questions or comments, please feel free to <a href="mailto:siliconvalleys5.22@gmail.com">contact us</a>.</h2>
+    </div>
+
+    <div class="group-profile">
+        <h2>GROUP PROFILE</h2>
+    </div>
+
+    <div class="group-member" id="William">
+        <h3>William Smallacombe</h3>
+        <ul>
+            <li>William....</li>
+        </ul>
+    </div>
+
+    <div class="group-member" id="Justin">
+        <h3>Justin Hardie</h3>
+        <ul>
+            <li>Justin...</li>
+        </ul>
+    </div>
+
+    <div class="group-member" id="Thaddeus">
+        <h3>Thaddeus Shu</h3>
+        <ul>
+            <li>Thaddeus...</li>
+        </ul>
+    </div>
+
+    <div class="group-member" id="Winson">
+        <h3>Winson Tan</h3>
+        <ul>
+            <li>Winson is from Penang, Malaysia and is majoring in both Electrical Engineering and Software Development.</li>
+            <li>In his spare time, he enjoys watching chinese cartoons. With regards to his taste in music, he thinks that anisongs are the bleeding edge sound of Japan.</li>
+            <li>He unironically relates to Dostoevsky's Underground Man and thinks that Gogol's The Overcoat is the greatest short story ever written.</li>
+        </ul>
+    </div>
     
-    <br>
-    <br>
-    <hr>
-    <a href="malito:siliconvalleys5.22@gmail.com" id="email_about"><p1>          Team Email</p1></a>
-    <br>
-</body>
+  </body>
 </html>
