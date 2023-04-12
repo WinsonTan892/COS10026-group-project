@@ -176,6 +176,7 @@ padding-right: 15px;
 
 aside {
 border: 1px solid purple;
+margin: auto;
 }
 
 .container {
@@ -276,6 +277,7 @@ box-sizing: border-box;
 position: relative;
 padding-left: 22px;
 border: 1px solid purple;
+margin: auto;
 }
 
 .asideposition {
@@ -348,7 +350,7 @@ display: none;
 }
 
 
-@media only screen and (min-width: 841px) and (max-width: 1400px) {
+@media only screen and (min-width: 841px) and (max-width: 1450px) {
 img#logo {
 display: block;
 width: 130px;
@@ -375,6 +377,7 @@ box-sizing: border-box;
 position: relative;
 padding-left: 22px;
 border: 1px solid purple;
+margin: auto;
 }
 
 .asideposition {
