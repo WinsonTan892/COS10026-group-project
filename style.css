@@ -168,10 +168,11 @@ position: fixed; bottom: 0; width: 100px;}
 
 .asideposition {
 float:right;
-right: 0; width: 21%; 
+right: 0; width: 25%; 
 text-align: left;
 color:white;
 padding-right: 15px;
+border: 3px solid black;	
 }
 
 .container {
@@ -275,6 +276,7 @@ padding-left: 22px;
 
 .asideposition {
 width: 100%;
+border: 3px solid black;
 }
 
 .centerbox {
@@ -373,6 +375,7 @@ padding-left: 22px;
 
 .asideposition {
 width: 100%;
+border: 3px solid black;
 }
 
 
