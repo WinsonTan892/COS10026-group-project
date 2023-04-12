@@ -81,6 +81,9 @@ margin: 0;
 padding: 0;
 }
 
+.jobs_list {
+color: black;
+}
 
 .pagecolor {
 background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);
