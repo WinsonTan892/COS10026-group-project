@@ -729,7 +729,11 @@ figcaption {
 .enhancement-container {
     display: flex;
     flex-direction: column;
-    margin: 1em 2em 2em 2em
+    margin: 1em 2em 2em 2em;
+    font-family: sans-serif;
+    color: rgb(82, 82, 82);
+    font-size: large;
+    text-align: left;
   }
   
 /* Set up flex items */
@@ -738,6 +742,10 @@ figcaption {
     padding: 2rem;
     flex-direction: row;
     justify-content: space-between;
+    font-family: sans-serif;
+    color: rgb(82, 82, 82);
+    font-size: large;
+    text-align: left;
   }
   
 /* Example styles for individual items */
@@ -753,14 +761,17 @@ figcaption {
     float: left;
     width: 50%;
     margin-top: 6px;
+    font-family: sans-serif;
+    color: rgb(82, 82, 82);
+    font-size: large;
+    text-align: left;
 }
 
 li {
     padding-top: 0.5em;
-}
-
-* {
     font-family: sans-serif;
     color: rgb(82, 82, 82);
     font-size: large;
-  } 
+    text-align: left;
+}
+
