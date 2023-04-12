@@ -723,7 +723,7 @@ figcaption {
 
 
 
-/* test */
+/* test for enhancestyle.css */
 
   /* Set up a flex container with a column layout */
 .enhancement-container {
@@ -758,3 +758,9 @@ figcaption {
 li {
     padding-top: 0.5em;
 }
+
+* {
+    font-family: sans-serif;
+    color: rgb(82, 82, 82);
+    font-size: large;
+  } 
