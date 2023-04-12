@@ -74,9 +74,6 @@ nav a.active {
 }
 
 
-
-
-
 body {
 font-family: "Lato", sans-serif;
 flex-wrap: wrap;
@@ -86,11 +83,8 @@ padding: 0;
 
 
 .pagecolor {
-background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);}
-
-
-
-
+background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);
+}
 
 .companylogo {
 position: absolute;
@@ -99,9 +93,7 @@ top:1.35%;
 z-index: 1;
 }
 
-
-
-	.leftbox {
+.leftbox {
 background-color: rgb(255, 255, 255);
 width: 28.5%;
 border: 5px solid #1E90FF;
@@ -459,10 +451,6 @@ nav a.active {
 
 
 /* aboutnewstyle.css */
-h1 {
-    margin: 1em 1em 1em 1em;
-    font-size: 5em
-}
 
 .header-container {
     display: flex;
@@ -554,7 +542,6 @@ section li, section p {
 
 .group-member:nth-child(even) {
     background-color: lightgray;
-
 }
 
 /*FOR ANIMATION CREDITS TO */
@@ -622,145 +609,145 @@ figcaption {
 
 /* index html css */
        
- .jverticleline {
-   border-left: 6px solid #134ecf;
-   height: 500px;
-   position: relative;
-   left: 50%;
-   margin-left: -3px;
-   top: 0;
-  }
+.jverticleline {
+	border-left: 6px solid #134ecf;
+	height: 500px;
+	position: relative;
+	left: 50%;
+	margin-left: -3px;
+	top: 0;
+}
 
- .jbutton {
-   border: none;
-   color: white;
-   padding: 16px 32px;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 2px;
-   transition-duration: 0.4s;
-   cursor: pointer;
-  }
+.jbutton {
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
 
-  .jbutton1 {
-    background-color: white;
-    color: black;
-    border: 2px solid #134ecf;
-   }
+.jbutton1 {
+	background-color: white;
+	color: black;
+	border: 2px solid #134ecf;
+}
 
-   .jbutton1:hover {
-     background-color: #134ecf;
-     color: white;
-    }
-        
-    .jsidenav {
-      list-style-type: none;
-  margin 0;
-	    padding: 0;
-	       width: 150px;
-	       background-color: #f1f1f1;
-	       text-align: center;
-	       position: fixed;
-	       right: 0;
-	       top: 20%;
-	       z-index: 3;
-	       border: 2px solid black;
-         }
+.jbutton1:hover {
+	background-color: #134ecf;
+	color: white;
+}
 
-         .jsidenav a {
-       	 display: block;
-	       color: #000;
-	       padding: 8px 16px;
-	       text-decoration: none;
-         }
+.jsidenav {
+	list-style-type: none;
+	margin 0;
+	padding: 0;
+	width: 150px;
+	background-color: #f1f1f1;
+	text-align: center;
+	position: fixed;
+	right: 0;
+	top: 20%;
+	z-index: 3;
+	border: 2px solid black;
+}
 
-         .jsidenav a.active {
-	       background-color: #1E90FF;
-	       color: white;
-          }
+.jsidenav a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
 
-         .jsidenav a:hover:not(.active) {
-      	 background-color: #555;
-	       color: white;
-         }
+.jsidenav a.active {
+	background-color: #1E90FF;
+	color: white;
+}
 
-         
-         .jleft {
-          text-align: left;
-         }
+.jsidenav a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
 
-         .jright {
-          text-align:right;
-         }
-        
-         .jsidenav a:hover {
-          color: #064579;
-         }
-        
-         .jmain {
-          margin-left: 140px; /* Same width as the sidebar + left position in px */
-          font-size: 28px; /* Increased text to enable scrolling */
-          padding: 0px 10px;
-         }
-        
-         @media screen and (max-height: 450px) {
-          .sidenav {padding-top: 15px;}
-          .sidenav a {font-size: 18px;}
-         }
 
-         .jbox {
-          background-color: lightgrey;
-          width: 550px;
-          border: 7px solid #134ecf;
-          padding: 40px;
-          margin: 15px;
-         }
+.jleft {
+	text-align: left;
+}
 
-         .jleftbox {
-          background-color: rgb(255, 255, 255);
-          width: 700px;
-          border: 7px solid #134ecf;
-          padding: 40px;
-          margin: 15px;
-          float: left;
-          background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
-         }
+.jright {
+	text-align:right;
+}
 
-         .jrightbox {
-          background-color: rgb(255, 255, 255);
-          width: 700px;
-          border: 7px solid #134ecf;
-          padding: 40px;
-          margin: 15px;
-          float:right;
-          background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
-         }
-         .jcenterbox {
-          background-color: rgb(255, 255, 255);
-          width: 1200px;
-          border: 7px solid #134ecf;
-          padding: 40px;
-          margin: 15px;
-         }
+.jsidenav a:hover {
+	color: #064579;
+}
 
-         .jcenterboxposition{
-         position: relative;
-         top: 3%;
-         left: 20%;
-         margin: -25px 0 0 -25px
-         }
+.jmain {
+	margin-left: 140px; /* Same width as the sidebar + left position in px */
+	font-size: 28px; /* Increased text to enable scrolling */
+	padding: 0px 10px;
+}
 
-         .jfloat-bottom {
-	        clear:both;
-	        border-top: 4px double black;
-	        min-width: 100%;
-	        left: 0;
-	        color: white;
-	        box-sizing: border-box;
-	        padding:4px;
-	        background: black;
-	        text-align: center;
-	        font-family: Arial;
-	        position: fixed; bottom: 0; width: 100px;
-         }
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+.jbox {
+	background-color: lightgrey;
+	width: 550px;
+	border: 7px solid #134ecf;
+	padding: 40px;
+	margin: 15px;
+}
+
+.jleftbox {
+	background-color: rgb(255, 255, 255);
+	width: 700px;
+	border: 7px solid #134ecf;
+	padding: 40px;
+	margin: 15px;
+	float: left;
+	background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
+}
+
+.jrightbox {
+	background-color: rgb(255, 255, 255);
+	width: 700px;
+	border: 7px solid #134ecf;
+	padding: 40px;
+	margin: 15px;
+	float:right;
+	background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
+}
+.jcenterbox {
+	background-color: rgb(255, 255, 255);
+	width: 1200px;
+	border: 7px solid #134ecf;
+	padding: 40px;
+	margin: 15px;
+}
+
+.jcenterboxposition{
+	position: relative;
+	top: 3%;
+	left: 20%;
+	margin: -25px 0 0 -25px
+}
+
+.jfloat-bottom {
+	clear:both;
+	border-top: 4px double black;
+	min-width: 100%;
+	left: 0;
+	color: white;
+	box-sizing: border-box;
+	padding:4px;
+	background: black;
+	text-align: center;
+	font-family: Arial;
+	position: fixed; bottom: 0; width: 100px;
+}
