@@ -721,3 +721,40 @@ figcaption {
 	position: fixed; bottom: 0; width: 100px;
 }
 
+
+
+/* test */
+
+  /* Set up a flex container with a column layout */
+.enhancement-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 2em 2em 2em
+  }
+  
+/* Set up flex items */
+.enhancement {
+    flex: 1; /* Grow to fill available space */
+    padding: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+/* Example styles for individual items */
+.enhancement:nth-child(odd) {
+    background-color: #f7f7f7;
+  }
+  
+.enhancement:nth-child(even) {
+    background-color: #eaeaea;
+  }
+
+.details {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+
+li {
+    padding-top: 0.5em;
+}
