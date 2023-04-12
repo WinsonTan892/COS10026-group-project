@@ -171,8 +171,11 @@ float:right;
 right: 0; width: 25%; 
 text-align: left;
 color:white;
-padding-right: 15px;
-border: 3px solid black;	
+padding-right: 15px;	
+}
+
+aside {
+border: 1px solid purple;
 }
 
 .container {
@@ -276,7 +279,7 @@ padding-left: 22px;
 
 .asideposition {
 width: 100%;
-border: 3px solid black;
+border: 1px solid purple;
 }
 
 .centerbox {
@@ -345,7 +348,7 @@ display: none;
 }
 
 
-@media only screen and (min-width: 841px) and (max-width: 1120px) {
+@media only screen and (min-width: 841px) and (max-width: 1220px) {
 img#logo {
 display: block;
 width: 130px;
@@ -375,7 +378,7 @@ padding-left: 22px;
 
 .asideposition {
 width: 100%;
-border: 3px solid black;
+border: 1px solid purple;
 }
 
 
