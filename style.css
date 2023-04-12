@@ -450,3 +450,172 @@ nav a.active {
   background-color: #ddd;
   color: black;
 }
+
+
+
+
+
+
+
+
+/* aboutnewstyle.css */
+h1 {
+    margin: 1em 1em 1em 1em;
+    font-size: 5em
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Style definition list */
+.dl-container {
+    background-color: lightgray;
+    padding: 1em 0em 1em 0em;
+    height: 570px
+}
+
+dl {
+    display: flex;
+    margin: 0em 0em 1em 0em;
+    padding: 1em;    
+  }
+  
+dt {
+    width: 8em;
+    font-weight: bold;
+
+  }
+  
+/* Style photo and figure */
+figure {
+    float: right;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  
+img {
+    border: 0.5em solid #093085;
+  }
+
+.timetable {
+    margin-top: 1em;
+    text-align: center;
+    font-size: large;
+}
+
+/* Style table */
+table {
+    margin: auto;
+    border-collapse: collapse;
+  }
+  
+th, td {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #e7e7e7;
+  }
+
+
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 10em 1em 10em;
+    font-size:x-large;
+}
+
+section li, section p {
+    text-align: center;
+    font-size: large
+}
+
+.group-profile {
+    background-color: #113f67;
+    padding: 1em 0em 1em 0em;
+}
+
+.more-about-us {
+    text-align: center;
+}
+
+
+.group-profile h2 {
+    color:#ddd;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.group-member {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.group-member:nth-child(even) {
+    background-color: lightgray;
+
+}
+
+/*FOR ANIMATION CREDITS TO */
+svg path {
+    stroke-dasharray: 38.02;
+    stroke-dashoffset: 38.02;
+    animation: draw 2s linear forwards;
+  }
+  
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+    0% {
+      stroke: white;
+    }
+    30% {
+      stroke: rgb(48, 172, 255);
+    }
+    50% {
+      stroke: rgb(171, 221, 255);
+    }
+    70% {
+      stroke: rgb(69, 179, 253);
+    }
+    100% {
+    stroke-dashoffset:0;  
+    stroke: rgb(150, 207, 244);
+    }
+  }
+
+
+/* Animation property */
+figcaption {
+    text-align: center;
+    animation: wiggle 2s linear infinite;
+
+  }
+  
+/* Keyframes */
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-1deg);
+    }
+    20% {
+      transform: rotateZ(1deg);
+    }
+    25% {
+      transform: rotateZ(-1deg);
+    }
+    30% {
+      transform: rotateZ(1deg);
+    }
+    35% {
+      transform: rotateZ(-1deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+ 
