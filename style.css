@@ -275,11 +275,11 @@ flex-basis: 100%;
 box-sizing: border-box;
 position: relative;
 padding-left: 22px;
+border: 1px solid purple;
 }
 
 .asideposition {
 width: 100%;
-border: 1px solid purple;
 }
 
 .centerbox {
@@ -348,7 +348,7 @@ display: none;
 }
 
 
-@media only screen and (min-width: 841px) and (max-width: 1220px) {
+@media only screen and (min-width: 841px) and (max-width: 1400px) {
 img#logo {
 display: block;
 width: 130px;
@@ -374,11 +374,11 @@ flex-basis: 100%;
 box-sizing: border-box;
 position: relative;
 padding-left: 22px;
+border: 1px solid purple;
 }
 
 .asideposition {
 width: 100%;
-border: 1px solid purple;
 }
 
 
