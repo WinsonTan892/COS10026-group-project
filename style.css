@@ -171,7 +171,8 @@ float:right;
 right: 0; width: 25%; 
 text-align: center;
 color:white;
-padding-right: 15px;	
+padding-right: 15px;
+padding-left: 10px;	
 }
 
 aside {
