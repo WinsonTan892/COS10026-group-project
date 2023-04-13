@@ -1,0 +1,33 @@
+/*
+filename: William Smallacombe
+author: William Smallacombe
+created: 21 March 2023
+last modified: 21 March 2023
+description: about_page.html
+*/
+
+body {
+    background: linear-gradient(180deg, white 20%, lightblue);
+    }
+
+
+#float_left {float: left;}
+#group_title {position: relative; left:100px;}
+#group_photo {float: left; position: relative; left: 350px; top:-70px;}
+#float_center {position: relative; left: 200px;}
+* {font-family: calabri, sans-serif;}
+h1 {text-size-adjust: 150%;}
+#charity {position: relative; left: 20px;}
+
+
+.about_table {text-align: center;}
+#svs5_p1_about {position: relative; left: 20px; inline-size: 150px; overflow-wrap: break-word;}
+#about_line {position: relative; left: 230px;}
+#office_image_about {float: right; position: relative; left: 20px;}
+#meet_about {font-size: 40px;}
+#table_color_about {background-color: rgb(125, 166, 219); border-color:rgb(125, 166, 219);}
+#top_about {background: white; color: white;  border:white; }
+#email_about {position: relative; left: 50px}
+#break_about {border:2px inset darkblue}
+#apply_about {float:left;}
+.row {display: flex;}
