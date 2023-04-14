@@ -394,7 +394,7 @@ width: 130px;
 .dl-container {
     background-color: lightgray;
     padding: 1em 0em 1em 0em;
-    height: 570px
+    height: 650px
 }
 
 dl {
@@ -511,7 +511,7 @@ svg path {
 figcaption {
     text-align: center;
     animation: wiggle 2s linear infinite;
-
+    padding-top: 30px;
   }
   
 /* Keyframes */
