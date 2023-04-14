@@ -37,22 +37,25 @@ nav a.active {
 /*For the Logo and Title*/
 img {
   width: 70% ;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
 }
 
-h1 {
+.header-container h1 {
     font-size: 1.7em
 }
 
 .header-container {
   display:flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height:500px;
-  width: 900px;
+  height: auto;
+  width: 75%;
   padding: 50px 0 0 100px;
   color:rgb(82, 82, 82);
-  z-index: 3;
 }
 
 /*For the form in the body*/
@@ -164,7 +167,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   border-radius: 6px;
-  color: black  ;
+  color: black ;
   box-shadow: inset 200px 0 0 0 #ddd;
 }
 
@@ -174,17 +177,38 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+
+  img {
+    display: none;
+  }
+
+  .header-container{
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    }
+
+  .JRN-row {
+    text-align: center;
+    margin-left:17%
+  }
+
+  input[type=submit]:hover {
+    border-radius: 6px;
+    color: black  ;
+    box-shadow: inset 600px 0 0 0 #ddd;
+  }
+
 }
 
-.float-bottom {
-  min-width: 100%;
-  left: 0;
-  color: white;
-  box-sizing: border-box;
-  box-shadow: 0 0 5px rgba (0,0,0,0.25);
-  padding: 4px;
-  background: black;
-  text-align: center;
-  font-family: Arial;
-  position: fixed; bottom: 0; width: 100px;
+@media screen and (max-width: 1200px) {
+  .header-container img {
+    display: none;
+  }
+  .header-container h1 {
+    padding-bottom: 5%;
+  }
 }
