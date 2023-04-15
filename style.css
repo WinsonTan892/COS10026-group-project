@@ -75,7 +75,6 @@ margin: 15px;
  background: rgb(123,211,232);
 background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
 color: #0f2852;
-position: relative;
 }
 	.rightbox {
 background-color: rgb(255, 255, 255);
@@ -87,7 +86,6 @@ float: left;
 background: rgb(123,211,232);
 background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
 color: #40081a;
-position: relative;
 }
 
 .centerbox {
@@ -127,7 +125,6 @@ text-align: left;
 color:white;
 padding-right: 15px;
 padding-left: 10px;	
-position: relative;
 }
 
 aside {
@@ -234,27 +231,7 @@ display: none;
   animation-fill-mode: forwards;
 }
 
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
 .leftbox {
   animation-name: slideInFromRight;
@@ -311,28 +288,6 @@ width: 130px;
   position: relative;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 .leftbox {
