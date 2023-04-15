@@ -4,6 +4,7 @@ nav {
     overflow: hidden;
     position:sticky;
     top: 0px;
+    z-index: 3;
   }
   
 nav a {
