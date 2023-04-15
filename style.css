@@ -54,7 +54,6 @@ text-emphasis: triangle #800080;
 .pagecolor {
 background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);
 font-family: "Lato", sans-serif;
-flex-wrap: wrap;
 margin: 0;
 padding: 0;
 }
