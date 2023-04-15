@@ -69,12 +69,13 @@ z-index: 1;
 background-color: rgb(255, 255, 255);
 width: 28.5%;
 border: 5px solid #1E90FF;
-float: left;
+float: none;
 padding: 40px;
 margin: 15px;
  background: rgb(123,211,232);
 background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
 color: #0f2852;
+ animation-name: slideInFromLeft;	
 }
 	.rightbox {
 background-color: rgb(255, 255, 255);
@@ -82,10 +83,11 @@ width: 28.5%;
 border: 5px solid darkred;
 padding: 40px;
 margin: 15px;
-float: left;
+float: none;
 background: rgb(123,211,232);
 background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
 color: #40081a;
+ animation-name: slideInFromLeft;		
 }
 
 .centerbox {
@@ -124,7 +126,8 @@ right: 0; width: 25%;
 text-align: left;
 color:white;
 padding-right: 15px;
-padding-left: 10px;	
+padding-left: 10px;
+ animation-name: slideInFromRight;	
 }
 
 aside {
@@ -181,24 +184,13 @@ margin-bottom: 100px;
   }
 }
 
-.leftbox {
-  animation-name: slideInFromLeft;
-}
-
-.rightbox {
-  animation-name: slideInFromLeft;
-}
-
-.asideposition {
-  animation-name: slideInFromRight;
-}
 
 
 
 @media only screen and (max-width: 840px) {
 .rightbox, .leftbox {
 width: 80%;
-float: left;
+float: none;
 }
 
 h1 {
@@ -233,16 +225,12 @@ display: none;
 
 
 
-.leftbox {
+.leftbox, .asideposition {
   animation-name: slideInFromRight;
 }
 
 .rightbox {
   animation-name: slideInFromLeft;
-}
-
-.asideposition {
-  animation-name: slideInFromRight;
 }
 }
 
@@ -263,8 +251,6 @@ width: 35%;
 float: left;
 }
 
-
-
 aside {
 flex-basis: 100%;
 box-sizing: border-box;
@@ -274,6 +260,7 @@ padding-left: 22px;
 
 .asideposition {
 width: 100%;
+ animation-name: slideInFromLeft;	
 }
 
 
@@ -296,10 +283,6 @@ width: 130px;
 
 .rightbox {
   animation-name: slideInFromRight;
-}
-
-.asideposition {
-  animation-name: slideInFromLeft;
 }
 }
 
