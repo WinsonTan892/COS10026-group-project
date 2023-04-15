@@ -76,7 +76,6 @@ margin: 15px;
 background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
 color: #0f2852;
  animation-name: slideInFromLeft;
-	margin-top: 100px;
 }
 	.rightbox {
 background-color: rgb(255, 255, 255);
@@ -89,7 +88,6 @@ background: rgb(123,211,232);
 background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
 color: #40081a;
  animation-name: slideInFromLeft;	
-		margin-top: 100px;
 }
 
 .centerbox {
