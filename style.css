@@ -198,7 +198,7 @@ margin-bottom: 100px;
 @media only screen and (max-width: 840px) {
 .rightbox, .leftbox {
 width: 80%;
-float: none;
+float: left;
 }
 
 h1 {
