@@ -75,6 +75,7 @@ margin: 15px;
  background: rgb(123,211,232);
 background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
 color: #0f2852;
+position: relative;
 }
 	.rightbox {
 background-color: rgb(255, 255, 255);
@@ -86,6 +87,7 @@ float: left;
 background: rgb(123,211,232);
 background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(232,123,165,1) 0%, rgba(255,50,50,1) 100%);
 color: #40081a;
+position: relative;
 }
 
 .centerbox {
@@ -114,7 +116,8 @@ padding: 4px;
 background: black;
 text-align: center;
 font-family: Arial;
-position: fixed; bottom: 0; width: 100px;}
+position: fixed; bottom: 0; width: 100px;
+}
 
 
 .asideposition {
@@ -124,6 +127,7 @@ text-align: left;
 color:white;
 padding-right: 15px;
 padding-left: 10px;	
+position: relative;
 }
 
 aside {
