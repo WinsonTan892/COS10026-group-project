@@ -515,6 +515,22 @@ figcaption {
 	animation: fadeIn 2s ease-in-out forwards
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.jboxleft {
+	background-color: rgb(255, 255, 255);
+	width: 700px;
+	border: 7px solid #134ecf;
+	padding: 40px;
+	margin: 15px;
+	float: right;
+	background: linear-gradient(135deg, rgba(123,211,232,1) 0%, rgba(123,211,232,1) 0%, rgba(50,171,255,1) 100%);
+	animation: fadeIn 2s ease-in-out forwards
+}
+
 .jleftbox {
 	background-color: rgb(255, 255, 255);
 	width: 700px;
