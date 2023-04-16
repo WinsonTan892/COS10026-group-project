@@ -439,11 +439,12 @@ figcaption {
  
 
 /* index html css */
+/* This renders the background colour, while aslo setting the font*/
  #indexpage{
   font-family: "Lato", sans-serif;
   background: linear-gradient(50deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);
 }
-
+/* this renders all elements opacity from 0 to 1*/ 
 @keyframes fadeIn {
   from {
     opacity: 0; 
@@ -452,7 +453,7 @@ figcaption {
     opacity: 1; 
   }
 }
-
+ 
 .jverticleline {
 	border-left: 6px solid #134ecf;
 	height: 500px;
