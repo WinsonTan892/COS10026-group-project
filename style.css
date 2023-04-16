@@ -69,7 +69,7 @@ h3#jobdetails {
 text-align: center;
 font-variant: normal;
 font-size: 35px;
-
+}
 .sizeup {
 font-size: 27px;
 }
@@ -243,6 +243,10 @@ h2#jobdetails {
 font-size: 25px;
 }
 
+h3#jobdetails {
+font-size: 22px
+}
+	
 aside {
 flex-basis: 100%;
 box-sizing: border-box;
@@ -294,6 +298,10 @@ font-size: 30px;
 
 h2#jobdetails {
 font-size: 30px;
+}
+
+h3#jobdetails {
+font-size: 27px;
 }
 	
 .rightbox, .leftbox {
