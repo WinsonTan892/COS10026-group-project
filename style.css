@@ -9,6 +9,8 @@ description: Used for: index.html, about.html, apply.html, jobs.html, enhancemen
 
 
 /* for the navbar */
+/* for the navbar */
+/* for the navbar */
 nav {
     background-color: #113f67;
     overflow: hidden;
@@ -39,7 +41,12 @@ nav a.active {
   }
 
 
-/*Used for Job Description Page */
+/* For Job Description Page */
+/* For Job Description Page */
+/* For Job Description Page */
+/* For Job Description Page */
+/* For Job Description Page */
+
 .colorblack {
 color: black;
 }
@@ -309,6 +316,7 @@ width: 130px;
 }
 }
 
+
 /* Style definition list */
 .dl-container {
     background-color: lightgray;
@@ -460,6 +468,8 @@ figcaption {
  
 
 /* index html css */
+/* index html css */
+/* index html css */
 /* This renders the background colour, while aslo setting the font*/
  #indexpage{
   font-family: "Lato", sans-serif;
@@ -601,8 +611,9 @@ figcaption {
 
 
 
-/* test for enhancestyle.css */
-
+/* For Enhancements Page */
+/* For Enhancements Page */
+/* For Enhancements Page */
   /* Set up a flex container with a column layout */
 .enhancement-container {
     display: flex;
