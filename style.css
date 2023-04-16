@@ -66,9 +66,9 @@ font-size: 45px;
 }
 
 h3#jobdetails {
-text-align: center;
+text-align: left;
 font-variant: normal;
-font-size: 35px;
+font-size: 27px;
 }
 .sizeup {
 font-size: 27px;
@@ -244,7 +244,7 @@ font-size: 25px;
 }
 
 h3#jobdetails {
-font-size: 22px
+font-size: 17px
 }
 	
 aside {
@@ -301,7 +301,7 @@ font-size: 30px;
 }
 
 h3#jobdetails {
-font-size: 27px;
+font-size: 23px;
 }
 	
 .rightbox, .leftbox {
