@@ -475,14 +475,7 @@ figcaption {
   }
 }
  
-.jverticleline {
-	border-left: 6px solid #134ecf;
-	height: 500px;
-	position: relative;
-	left: 50%;
-	margin-left: -3px;
-	top: 0;
-}
+
 /* Buttons used to redirect user to different pages */
 .jbutton {
 	border: none;
