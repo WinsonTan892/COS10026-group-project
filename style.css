@@ -58,6 +58,18 @@ font-family: Times New Roman, Times, serif;
 font-size: 45px;
 }
 
+h2#jobdetails {
+text-align: center;
+font-variant: normal;
+font-family: Times New Roman, Times, serif;
+font-size: 45px;
+}
+
+h3#jobdetails {
+text-align: center;
+font-variant: normal;
+font-size: 35px;
+
 .sizeup {
 font-size: 27px;
 }
@@ -226,6 +238,10 @@ float: none;
 h1 {
 font-size: 25px;
 }
+	
+h2#jobdetails {
+font-size: 25px;
+}
 
 aside {
 flex-basis: 100%;
@@ -275,6 +291,10 @@ height: 113.75px;
 h1 {
 font-size: 30px;
 }	
+
+h2#jobdetails {
+font-size: 30px;
+}
 	
 .rightbox, .leftbox {
 width: 35%;
