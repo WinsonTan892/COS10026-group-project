@@ -1,3 +1,13 @@
+/*
+filename: style.css
+author: Winson, Justin, William, Thaddeus
+created: 21/03/23
+last modified: 16/04/23
+description: Used for: index.html, about.html, apply.html, jobs.html, enhancements.html
+*/
+
+
+
 /* for the navbar */
 nav {
     background-color: #113f67;
@@ -29,17 +39,16 @@ nav a.active {
   }
 
 
+/*Used for Job Description Page */
+.colorblack {
+color: black;
+}
+
 h1 {
  text-align: center;
 font-variant: normal;
 font-family: Times New Roman, Times, serif;
 font-size: 45px;
-}
-
-
-
-.colorblack {
-color: black;
 }
 
 .sizeup {
@@ -51,15 +60,19 @@ font-size:20px;
 text-emphasis: triangle #800080;
 }
 
+/* Removes space between border of webpage and page body */
 body {
 font-family: "Lato", sans-serif;
 margin: 0;
 padding: 0;
 }
+
+/* Used for page background color */
 .pagecolor {
 background: linear-gradient(135deg, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.7) 20%);
 }
 
+/* Company logo positioning */
 .companylogo {
 position: absolute;
 left: 0.6%;
@@ -67,6 +80,19 @@ top:1.35%;
 z-index: 1;
 }
 
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+img#logo {
+width: 200px;
+height: 175px;
+}
+
+
+/* Textboxes */
 .leftbox {
 background-color: rgb(255, 255, 255);
 width: 28.5%;
@@ -108,6 +134,7 @@ top: 50%;
 transform: translate(-50%, -50%);
 }
 
+/* Used to ensure Footer remains at the bottom of visible webpage */
 .float-bottom {
 min-width: 100%;
 left: 0;
@@ -121,7 +148,7 @@ font-family: Arial;
 position: fixed; bottom: 0; width: 100px;
 }
 
-
+/* Aside bar positioning and aesthetics*/
 .asideposition {
 float:right;
 right: 0; width: 25%; 
@@ -136,6 +163,7 @@ aside {
 border: 4px solid purple;
 }
 
+/* Used to organise objects on page */
 .container {
 position: relative;
 width: fit-content;
@@ -143,21 +171,13 @@ margin: 0 auto;
 justify-content: space-between;
 }
 
-img {
-display: block;
-max-width: 100%;
-height: auto;
-}
 
-img#logo {
-width: 200px;
-height: 175px;
-}
-
+/* Separates title of page and job details information */
 .maincontent {
 margin-bottom: 100px; 
 }
 
+/* Animation of textboxes and aside bar */
 .leftbox, .rightbox, .asideposition {
   position: relative;
   animation-duration: 3s;
@@ -188,7 +208,7 @@ margin-bottom: 100px;
 
 
 
-
+/* Changes to be made to objects on website when the width of screen is less than or equal to 840 pixels */
 @media only screen and (max-width: 840px) {
 .rightbox, .leftbox {
 width: 80%;
@@ -216,17 +236,17 @@ height: 60%;
 text-align: center;
 }
 
-img#logo	{
+img#logo {
 display: none;
 }
+	
 .leftbox, .rightbox, .asideposition {
   position: relative;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
-
-
+/* Direction of which the textboxes enter the webpage from */
 .leftbox, .asideposition {
   animation-name: slideInFromRight;
 }
@@ -236,7 +256,7 @@ display: none;
 }
 }
 
-
+/* Changes to be made to objects on website when the width of screen is more than 840 pixels but less than 1500 pixels */
 @media only screen and (min-width: 841px) and (max-width: 1500px) {
 img#logo {
 display: block;
