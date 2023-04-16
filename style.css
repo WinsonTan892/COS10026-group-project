@@ -236,15 +236,15 @@ float: none;
 }
 
 h1 {
-font-size: 25px;
+font-size: 28px;
 }
 	
 h2#jobdetails {
-font-size: 25px;
+font-size: 28px;
 }
 
 h3#jobdetails {
-font-size: 17px
+font-size: 28px
 }
 	
 aside {
@@ -301,7 +301,7 @@ font-size: 30px;
 }
 
 h3#jobdetails {
-font-size: 23px;
+font-size: 25px;
 }
 	
 .rightbox, .leftbox {
