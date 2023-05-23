@@ -10,7 +10,7 @@
 require_once("settings.php");
 
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
-    header("Location: apply.php");
+    header("Location: apply.html");
     exit();
   }
   
@@ -37,12 +37,15 @@ if (isset($_POST["lastname"])) {
     $lastname = sanitise_input($lastname);
 }
 
+$age = '';
 if (isset($_POST["DOB"])) {
     $DOB = $_POST["DOB"];
     $DOB = sanitise_input($DOB);
     $date = DateTime::createFromFormat('Y-m-d', $DOB);
-    $interval = $date->diff(new DateTime());
-    $age = $interval->y;
+    if ($date !== false) {
+      $interval = $date->diff(new DateTime());
+      $age = $interval->y;
+    }
 }
 
 $gender = null;
@@ -79,39 +82,29 @@ if (isset($_POST["phonenumber"])) {
     $phonenumber = sanitise_input($phonenumber);
 }
 
+
 if (isset($_POST["skills"])) {
   $skills = $_POST["skills"];
-
+  $teamwork = false;
+  $problemsolving = false;
+  $leadership = false;
+  $nsc = false;
+  $os = false;
   foreach ($skills as $skill) { 
     if ($skill == "teamwork") {
       $teamwork = true;
     }
-    else {
-      $teamwork = false;
-    }
     if ($skill == "problem-solving") {
       $problemsolving = true;
-    }
-    else {
-      $problemsolving = false;
     }
     if ($skill == "leadership") {
       $leadership = true;
     }
-    else {
-      $leadership = false;
-    }
     if ($skill == "nsc") {
       $nsc = true;
     }
-    else {
-      $nsc = false;
-    }
     if ($skill == "os") {
       $os = true;
-    }
-    else {
-      $os = false;
     }
   }
 }
@@ -126,6 +119,8 @@ if (isset($_POST["otherskills"])) {
   if (!$conn) {
     die("Connection failed");
   } 
+
+  $uniqueNumber = rand(0,1000000000);
 
   $sql = "CREATE TABLE IF NOT EXISTS `eoi` (
     `EOInumber` int(11) NOT NULL,
@@ -147,14 +142,15 @@ if (isset($_POST["otherskills"])) {
     `os` tinyint(1) DEFAULT NULL,
     `OtherSkills` varchar(1000) DEFAULT NULL,
     `Status` enum('New','Current','Final') DEFAULT 'New'
-  ) ENGINE=InnoDB DEFAULT CHARSET=latin1";
+    ) ENGINE=InnoDB DEFAULT CHARSET=latin1";
 
-  $sql = "INSERT INTO eoi (jobreferencenumber, firstname, lastname, DOB, gender, address, suburb, state, postcode, email, phonenumber, teamwork, problemsolving, leadership, nsc, os, otherskills)
-  VALUES ('$JRN','$firstname', '$lastname', '$DOB', '$gender', '$address', '$suburb', '$state', '$postcode', '$email', '$phonenumber', '$teamwork', '$problemsolving', '$leadership', '$nsc', '$os', '$otherskills')";
+  $conn->query($sql);
+  
+  $sql = "INSERT INTO eoi (EOInumber, jobreferencenumber, firstname, lastname, DOB, gender, address, suburb, state, postcode, email, phonenumber, teamwork, problemsolving, leadership, nsc, os, otherskills)
+  VALUES ('$uniqueNumber','$JRN','$firstname', '$lastname', '$DOB', '$gender', '$address', '$suburb', '$state', '$postcode', '$email', '$phonenumber', '$teamwork', '$problemsolving', '$leadership', '$nsc', '$os', '$otherskills')";
   
   if ($conn->query($sql) === TRUE) {
     $id = $conn->insert_id;
-    echo "<p> EOI Number: $id <p> <br>";
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
@@ -246,6 +242,7 @@ if (isset($_POST["otherskills"])) {
       }
       else {  
         echo "Success!<br>";
+        echo "Your EOInumber: " . $uniqueNumber;
       }
     
 ?>
