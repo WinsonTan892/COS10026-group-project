@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-
-<HTML>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <title>Index</title>   
-	<link rel="stylesheet" href="styles/style.css">
-    </head>
-    <body id="indexpage">
-        <!--This links all of the tabs in the nav bar to the other pages-->
-      <nav>
-		     <a class= "active" href = "index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="jobs.html">Job Details</a>
-          <a href="apply.html">Apply Job</a>
-          <a href="enhancements.html">Enhancements</a>
-     </nav>
+<?php include 'common.inc'; ?>
         <!-- This is the company logo image and the center box for the company statement-->
      <div class="jcenterimg">
           <img src="images/float_center.png"alt="Company Logo">
