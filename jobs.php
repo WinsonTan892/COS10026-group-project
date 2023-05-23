@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-
-<HTML lang = "en">
-    <head>
-	    <link href = "styles/style.css" rel = "stylesheet">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8" >
-		<meta name = "description"     content="Job Description Page" >
-		<meta name = "keywords"        content="HTML" >
-		<meta name = "author"          content="Thaddeus Shu" >
-		<title>HTML Job Description Page</title>	
-    </head>
-    <body class="pagecolor">
-	 <nav>
-          <a href = "index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a class = "active" href="jobs.html">Job Details</a>
-          <a href="apply.html">Apply Job</a>
-          <a href="enhancements.html">Enhancements</a>
-     </nav>
+<?php include 'common.inc'; ?>
 
 	 <section>
 	 <div class="container">
