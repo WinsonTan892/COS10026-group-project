@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang='en'>
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Application Form">
-		<meta name="author" content="Winson Tan">
-		<link rel="stylesheet" href="styles/style.css">
-		<title>Application Page</title>
-	</head>
-	<body>
-
-		<nav>
-				<a href="index.html">Home</a>
-        		<a href="about.html">About Us</a>
-        		<a href="jobs.html">Job Details</a>
-        		<a class="active" href="apply.html">Apply Job</a>
-        		<a href="enhancements.html">Enhancements</a>
-							
-		</nav>
+<?php include 'common.inc'; ?>
 		
 		<div class="apply">
 			<div class="header-container">
