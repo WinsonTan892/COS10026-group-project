@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang='en'>
-  <head>
-	<meta charset="utf-8">
-	<meta name="description" content="Enhancements">
-	<meta name="author" content="Winson Tan">
-	<link rel="stylesheet" href="styles/style.css">
-    	<title>Enhancements</title>
-  </head>
-  <body>
-	<nav>
-		<a href = "index.html">Home</a>
-        	<a href="about.html">About Us</a>
-        	<a href="jobs.html">Job Details</a>
-        	<a href="apply.html">Apply Job</a>
-        	<a class="active" href="enhancements.html">Enhancements</a>
-	</nav>
+<?php include 'common.inc'; ?>
   <div class="enhancement-container">
 
     <h2>List of enhancements</h2>
