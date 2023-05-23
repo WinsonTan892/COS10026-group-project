@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="About Us">
-    <meta name="author" content="William/Winson">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>About Us</title>
-  </head>
-  <body>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a class="active" href="about.html">About Us</a>
-        <a href="jobs.html">Job Details</a>
-        <a  href="apply.html">Apply Job</a>
-        <a href="enhancements.html">Enhancements</a>
-    </nav>
+<?php include 'common.inc'; ?>
 
     <div class="header-container">
         <h1>About Us</h1>
