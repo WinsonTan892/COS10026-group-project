@@ -1,5 +1,15 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: manager_login.php");
+    exit();
+}
+
 require_once("settings.php");
+
+$conn = mysqli_connect($host, $user, $pwd, $sql_db);
+
 $conn = mysqli_connect($host, $user, $pwd, $sql_db);
 
 if (!$conn) {
@@ -10,6 +20,11 @@ function sanitize($connection, $data) {
     $data = trim($data);
     $data = mysqli_real_escape_string($connection, $data);
     return $data;
+}
+
+$tableExists = mysqli_query($conn, "SHOW TABLES LIKE 'eoi'");
+if ($tableExists->num_rows === 0) {
+    die('The "eoi" table does not exist in the database.');
 }
 
 $position = '';
@@ -248,19 +263,6 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
         <p>No EOIs found for the specified applicant.</p>
     <?php } ?>
 
-    <h2>Delete all EOIs with a specified job reference number</h2>
-    <form method="GET" action="">
-        <label for="delete">Job Reference Number:</label>
-        <input type="text" name="delete" id="delete">
-        <input type="submit" value="Delete">
-    </form>
-    <?php if (isset($result4)) { ?>
-        <?php if (mysqli_affected_rows($conn) > 0) { ?>
-            <p><?php echo mysqli_affected_rows($conn); ?> EOIs deleted successfully.</p>
-        <?php } else { ?>
-            <p>No EOIs found for the specified job reference number.</p>
-        <?php } ?>
-    <?php } ?>
 
     <h2>Change the Status of an EOI</h2>
     <form method="GET" action="">
@@ -274,6 +276,22 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
         </select>
         <input type="submit" value="Change">
     </form>
+    
+    <h2>Delete all EOIs with a specified job reference number</h2>
+    <form method="GET" action="">
+        <label for="delete">Job Reference Number:</label>
+        <input type="text" name="delete" id="delete">
+        <input type="submit" value="Delete">
+    </form>
+    <?php if (isset($result4)) { ?>
+        <?php if (mysqli_affected_rows($conn) > 0) { ?>
+            <p><?php echo mysqli_affected_rows($conn); ?> EOIs deleted successfully.</p>
+        <?php } else { ?>
+            <p>No EOIs found for the specified job reference number.</p>
+        <?php } ?>
+    <?php } ?>
+    
+    
     <a href="manager_login.php"><button type="button">Log Out</button></a>
     <?php if (isset($result5)) { ?>
         <?php if (mysqli_affected_rows($conn) > 0) { ?>
