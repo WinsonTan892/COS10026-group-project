@@ -1,4 +1,9 @@
 <?php include 'common.inc'; ?>
+<title>Index</title>
+</head>
+<body>
+<?php include 'nav.inc'; ?>
+	
         <!-- This is the company logo image and the center box for the company statement-->
      <div class="jcenterimg">
           <img src="images/float_center.png"alt="Company Logo">
