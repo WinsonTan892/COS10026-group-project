@@ -48,6 +48,7 @@ mysqli_close($conn);
 <html>
 <head>
     <title>Manager Login</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <h1>Manager Login</h1>
