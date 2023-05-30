@@ -2,10 +2,10 @@
 
 session_start();
 
-// Check if the user is not logged in
+
 if (!isset($_SESSION['username'])) {
-    header("Location: manager_login.php"); // Redirect to the login page
-    exit(); // Stop further execution of the script
+    header("Location: manager_login.php"); 
+    exit(); 
 }
 
 require_once("settings.php");
@@ -19,12 +19,8 @@ $query = "SHOW TABLES LIKE 'eoi'";
 $result = mysqli_query($conn, $query);
 
 if (mysqli_num_rows($result) === 0) {
-    // The "eoi" table does not exist
-    // Handle the situation gracefully, e.g., display a message
     echo "No EOI table found.";
 } else {
-    // The "eoi" table exists, continue with your code
-    // Rest of your code for the "manage.php" page
 }
 
 function sanitize($connection, $data) {
@@ -215,37 +211,37 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
         <br>
         <table class="manage_table">
             <tr>
-                <th id="manage_th"><a href="?sort=<?php echo $sort === 'asc' ? 'desc' : 'asc'; ?>">EOInumber</a></th>
-                <th id="manage_th"><a href="?sort2=<?php echo $sort2 === 'asc' ? 'desc' : 'asc'; ?>">Job Reference Number</a></th>
-                <th id="manage_th"><a href="?sort3=<?php echo $sort3 === 'asc' ? 'desc' : 'asc'; ?>">First Name</a></th>
-                <th id="manage_th"><a href="?sort4=<?php echo $sort4 === 'asc' ? 'desc' : 'asc'; ?>">Last Name</a></th>
-                <th id="manage_th"><a href="?sort5=<?php echo $sort5 === 'asc' ? 'desc' : 'asc'; ?>">Date of Birth</th>
-				<th id="manage_th"><a href="?sort6=<?php echo $sort6 === 'asc' ? 'desc' : 'asc'; ?>">Gender</th>
-				<th id="manage_th"><a href="?sort7=<?php echo $sort7 === 'asc' ? 'desc' : 'asc'; ?>">Street Address</th>
-                <th id="manage_th"><a href="?sort8=<?php echo $sort8 === 'asc' ? 'desc' : 'asc'; ?>">Suburb/Town</th>
-                <th id="manage_th"><a href="?sort9=<?php echo $sort9 === 'asc' ? 'desc' : 'asc'; ?>">State</th>
-                <th id="manage_th"><a href="?sort10=<?php echo $sort10=== 'asc' ? 'desc' : 'asc'; ?>">Postcode</th>
-                <th id="manage_th"><a href="?sort11=<?php echo $sort11 === 'asc' ? 'desc' : 'asc'; ?>">Email Address</th>
-                <th id="manage_th"><a href="?sort12=<?php echo $sort12 === 'asc' ? 'desc' : 'asc'; ?>">Phone Number</th>
-                <th id="manage_th">Skills</th>
-                <th id="manage_th">Other Skills</th>
-                <th id="manage_th"><a href="?sort13=<?php echo $sort13 === 'asc' ? 'desc' : 'asc'; ?>">Status</th>
+		<th id="manage_th"><a href="?sort=<?php echo $sort === 'asc' ? 'desc' : 'asc'; ?>">EOInumber</a></th>
+		<th id="manage_th"><a href="?sort2=<?php echo $sort2 === 'asc' ? 'desc' : 'asc'; ?>">Job Reference Number</a></th>
+		<th id="manage_th"><a href="?sort3=<?php echo $sort3 === 'asc' ? 'desc' : 'asc'; ?>">First Name</a></th>
+		<th id="manage_th"><a href="?sort4=<?php echo $sort4 === 'asc' ? 'desc' : 'asc'; ?>">Last Name</a></th>
+		<th id="manage_th"><a href="?sort5=<?php echo $sort5 === 'asc' ? 'desc' : 'asc'; ?>">Date of Birth</th>
+		<th id="manage_th"><a href="?sort6=<?php echo $sort6 === 'asc' ? 'desc' : 'asc'; ?>">Gender</th>
+		<th id="manage_th"><a href="?sort7=<?php echo $sort7 === 'asc' ? 'desc' : 'asc'; ?>">Street Address</th>
+		<th id="manage_th"><a href="?sort8=<?php echo $sort8 === 'asc' ? 'desc' : 'asc'; ?>">Suburb/Town</th>
+		<th id="manage_th"><a href="?sort9=<?php echo $sort9 === 'asc' ? 'desc' : 'asc'; ?>">State</th>
+		<th id="manage_th"><a href="?sort10=<?php echo $sort10=== 'asc' ? 'desc' : 'asc'; ?>">Postcode</th>
+		<th id="manage_th"><a href="?sort11=<?php echo $sort11 === 'asc' ? 'desc' : 'asc'; ?>">Email Address</th>
+		<th id="manage_th"><a href="?sort12=<?php echo $sort12 === 'asc' ? 'desc' : 'asc'; ?>">Phone Number</th>
+		<th id="manage_th">Skills</th>
+		<th id="manage_th">Other Skills</th>
+		<th id="manage_th"><a href="?sort13=<?php echo $sort13 === 'asc' ? 'desc' : 'asc'; ?>">Status</th>
             </tr>
             <?php while ($row = mysqli_fetch_assoc($result1)) { ?>
                 <tr>
-                    <td id="manage_td"><?php echo $row['EOInumber']; ?></td>
-                    <td id="manage_td"><?php echo $row['JobReferenceNumber']; ?></td>
-                    <td id="manage_td"><?php echo $row['FirstName']; ?></td>
-                    <td id="manage_td"><?php echo $row['LastName']; ?></td>
-					<td id="manage_td"><?php echo $row['DOB']; ?></td>
-					<td id="manage_td"><?php echo $row['gender']; ?></td>
-                    <td id="manage_td"><?php echo isset($row['Address']) ? $row['Address'] : ''; ?></td>
-                    <td id="manage_td"><?php echo isset($row['Suburb']) ? $row['Suburb'] : ''; ?></td>
-                    <td id="manage_td"><?php echo isset($row['State']) ? $row['State'] : ''; ?></td>
-                    <td id="manage_td"><?php echo isset($row['Postcode']) ? $row['Postcode'] : ''; ?></td>
-                    <td id="manage_td"><?php echo isset($row['Email']) ? $row['Email'] : ''; ?></td>
-                    <td id="manage_td"><?php echo $row['PhoneNumber']; ?></td>
-                    <td id="manage_td">
+			<td id="manage_td"><?php echo $row['EOInumber']; ?></td>
+			<td id="manage_td"><?php echo $row['JobReferenceNumber']; ?></td>
+			<td id="manage_td"><?php echo $row['FirstName']; ?></td>
+			<td id="manage_td"><?php echo $row['LastName']; ?></td>
+			<td id="manage_td"><?php echo $row['DOB']; ?></td>
+			<td id="manage_td"><?php echo $row['gender']; ?></td>
+			<td id="manage_td"><?php echo isset($row['Address']) ? $row['Address'] : ''; ?></td>
+			<td id="manage_td"><?php echo isset($row['Suburb']) ? $row['Suburb'] : ''; ?></td>
+			<td id="manage_td"><?php echo isset($row['State']) ? $row['State'] : ''; ?></td>
+			<td id="manage_td"><?php echo isset($row['Postcode']) ? $row['Postcode'] : ''; ?></td>
+			<td id="manage_td"><?php echo isset($row['Email']) ? $row['Email'] : ''; ?></td>
+			<td id="manage_td"><?php echo $row['PhoneNumber']; ?></td>
+			<td id="manage_td">
                         <?php
                         $skills = [];
                         if ($row['Teamwork'] == 1) {
@@ -288,21 +284,21 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
         <br>
         <table class="manage_table">
             <tr>
-                <th id="manage_th">EOInumber</th>
-                <th id="manage_th">Job Reference Number</th>
-                <th id="manage_th">First Name</th>
-                <th id="manage_th">Last Name</th>
-                <th id="manage_th">Date of Birth</th>
-				<th id="manage_th">Gender</th>
-				<th id="manage_th">Street Address</th>
-                <th id="manage_th">Suburb/Town</th>
-                <th id="manage_th">State</th>
-                <th id="manage_th">Postcode</th>
-                <th id="manage_th">Email Address</th>
-                <th id="manage_th">Phone Number</th>
-                <th id="manage_th">Skills</th>
-                <th id="manage_th">Other Skills</th>
-                <th id="manage_th">Status</th>
+		<th id="manage_th">EOInumber</th>
+		<th id="manage_th">Job Reference Number</th>
+		<th id="manage_th">First Name</th>
+		<th id="manage_th">Last Name</th>
+		<th id="manage_th">Date of Birth</th>
+		<th id="manage_th">Gender</th>
+		<th id="manage_th">Street Address</th>
+		<th id="manage_th">Suburb/Town</th>
+		<th id="manage_th">State</th>
+		<th id="manage_th">Postcode</th>
+		<th id="manage_th">Email Address</th>
+		<th id="manage_th">Phone Number</th>
+		<th id="manage_th">Skills</th>
+		<th id="manage_th">Other Skills</th>
+		<th id="manage_th">Status</th>
             </tr>
             <?php while ($row = mysqli_fetch_assoc($result2)) { ?>
                 <tr>
@@ -349,7 +345,6 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
     <?php } ?>
 <?php } ?>
 
-    <!-- Query 3: List all EOIs for a particular applicant -->
     <h2 id="manage_mini_headings">List all EOIs for a particular applicant</h2>
    
         <form method="GET" action="" id="manage_form" class="manage_input_color">
@@ -362,37 +357,37 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
         <br>
         <table class="manage_table">
             <tr>
-                <th id="manage_th">EOInumber</th>
-                <th id="manage_th">Job Reference Number</th>
-                <th id="manage_th">First Name</th>
-                <th id="manage_th">Last Name</th>
-                <th id="manage_th">Date of Birth</th>
-				<th id="manage_th">Gender</th>
-				<th id="manage_th">Street Address</th>
-                <th id="manage_th">Suburb/Town</th>
-                <th id="manage_th">State</th>
-                <th id="manage_th">Postcode</th>
-                <th id="manage_th">Email Address</th>
-                <th id="manage_th">Phone Number</th>
-                <th id="manage_th">Skills</th>
-                <th id="manage_th">Other Skills</th>
-                <th id="manage_th">Status</th>
+		<th id="manage_th">EOInumber</th>
+		<th id="manage_th">Job Reference Number</th>
+		<th id="manage_th">First Name</th>
+		<th id="manage_th">Last Name</th>
+		<th id="manage_th">Date of Birth</th>
+		<th id="manage_th">Gender</th>
+		<th id="manage_th">Street Address</th>
+		<th id="manage_th">Suburb/Town</th>
+		<th id="manage_th">State</th>
+		<th id="manage_th">Postcode</th>
+		<th id="manage_th">Email Address</th>
+		<th id="manage_th">Phone Number</th>
+		<th id="manage_th">Skills</th>
+		<th id="manage_th">Other Skills</th>
+		<th id="manage_th">Status</th>
             </tr>
             <?php while ($row = mysqli_fetch_assoc($result3)) { ?>
                 <tr>
-                    <td id="manage_td"><?php echo $row['EOInumber']; ?></td>
-                    <td id="manage_td"><?php echo $row['JobReferenceNumber']; ?></td>
-                    <td id="manage_td"><?php echo $row['FirstName']; ?></td>
-                    <td id="manage_td"><?php echo $row['LastName']; ?></td>
-					<td id="manage_td"><?php echo $row['DOB']; ?></td>
-					<td id="manage_td"><?php echo $row['gender']; ?></td>
-                    <td id="manage_td"><?php echo isset($row['Address']) ? $row['Address'] : ''; ?></td>
-                    <td id="manage_td"><?php echo isset($row['Suburb']) ? $row['Suburb'] : ''; ?></td>
-                    <td id="manage_td"><?php echo isset($row['State']) ? $row['State'] : ''; ?></td>
-                    <td id="manage_td"><?php echo isset($row['Postcode']) ? $row['Postcode'] : ''; ?></td>
-                    <td id="manage_td"><?php echo isset($row['Email']) ? $row['Email'] : ''; ?></td>
-                    <td id="manage_td"><?php echo $row['PhoneNumber']; ?></td>
-                    <td id="manage_td">
+			<td id="manage_td"><?php echo $row['EOInumber']; ?></td>
+			<td id="manage_td"><?php echo $row['JobReferenceNumber']; ?></td>
+			<td id="manage_td"><?php echo $row['FirstName']; ?></td>
+			<td id="manage_td"><?php echo $row['LastName']; ?></td>
+			<td id="manage_td"><?php echo $row['DOB']; ?></td>
+			<td id="manage_td"><?php echo $row['gender']; ?></td>
+			<td id="manage_td"><?php echo isset($row['Address']) ? $row['Address'] : ''; ?></td>
+			<td id="manage_td"><?php echo isset($row['Suburb']) ? $row['Suburb'] : ''; ?></td>
+			<td id="manage_td"><?php echo isset($row['State']) ? $row['State'] : ''; ?></td>
+			<td id="manage_td"><?php echo isset($row['Postcode']) ? $row['Postcode'] : ''; ?></td>
+			<td id="manage_td"><?php echo isset($row['Email']) ? $row['Email'] : ''; ?></td>
+			<td id="manage_td"><?php echo $row['PhoneNumber']; ?></td>
+			<td id="manage_td">
                         <?php
                         $skills = [];
                         if ($row['Teamwork'] == 1) {
