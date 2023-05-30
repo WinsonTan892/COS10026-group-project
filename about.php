@@ -1,4 +1,8 @@
 <?php include 'common.inc'; ?>
+<title>About</title>
+</head>
+<body>
+<?php include 'nav.inc'; ?>
 
     <div class="header-container">
         <h1>About Us</h1>
