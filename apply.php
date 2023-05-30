@@ -1,4 +1,8 @@
 <?php include 'common.inc'; ?>
+<title>Apply</title>
+</head>
+<body>
+<?php include 'nav.inc'; ?>
 		
 		<div class="apply">
 			<div class="header-container">
