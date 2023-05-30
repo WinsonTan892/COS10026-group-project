@@ -1,4 +1,8 @@
 <?php include 'common.inc'; ?>
+<title>Jobs</title>
+</head>
+<body>
+<?php include 'nav.inc'; ?>
 
 	 <section>
 	 <div class="container">
