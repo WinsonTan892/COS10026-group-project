@@ -18,7 +18,140 @@ $deleteRefNumber = '';
 $eoiId = '';
 $status = '';
 
+$sort = '';
+if (isset($_GET['sort'])) {
+    $sort = sanitize($conn, $_GET['sort']);
+    if ($sort !== 'asc' && $sort !== 'desc') {
+        $sort = ''; 
+    }
+}
+
+$sort2 = '';
+if (isset($_GET['sort2'])) {
+    $sort2 = sanitize($conn, $_GET['sort2']);
+    if ($sort2 !== 'asc' && $sort2 !== 'desc') {
+        $sort2 = ''; 
+    }
+}
+
+$sort3 = '';
+if (isset($_GET['sort3'])) {
+    $sort3 = sanitize($conn, $_GET['sort3']);
+    if ($sort3 !== 'asc' && $sort3 !== 'desc') {
+        $sort3 = ''; 
+    }
+}
+
+$sort4 = '';
+if (isset($_GET['sort4'])) {
+    $sort4 = sanitize($conn, $_GET['sort4']);
+    if ($sort4 !== 'asc' && $sort4 !== 'desc') {
+        $sort4 = ''; 
+    }
+}
+$sort5 = '';
+if (isset($_GET['sort5'])) {
+    $sort5 = sanitize($conn, $_GET['sort5']);
+    if ($sort5 !== 'asc' && $sort5 !== 'desc') {
+        $sort5 = ''; 
+    }
+}
+$sort6 = '';
+if (isset($_GET['sort6'])) {
+    $sort6 = sanitize($conn, $_GET['sort6']);
+    if ($sort6 !== 'asc' && $sort6 !== 'desc') {
+        $sort6 = ''; 
+    }
+}
+$sort7 = '';
+if (isset($_GET['sort7'])) {
+    $sort7 = sanitize($conn, $_GET['sort7']);
+    if ($sort7 !== 'asc' && $sort7 !== 'desc') {
+        $sort7 = ''; 
+    }
+}
+$sort8 = '';
+if (isset($_GET['sort8'])) {
+    $sort8 = sanitize($conn, $_GET['sort8']);
+    if ($sort8 !== 'asc' && $sort8 !== 'desc') {
+        $sort8 = ''; 
+    }
+}
+$sort9 = '';
+if (isset($_GET['sort9'])) {
+    $sort9 = sanitize($conn, $_GET['sort9']);
+    if ($sort9 !== 'asc' && $sort9 !== 'desc') {
+        $sort9 = ''; 
+    }
+}
+$sort10 = '';
+if (isset($_GET['sort10'])) {
+    $sort10 = sanitize($conn, $_GET['sort10']);
+    if ($sort10 !== 'asc' && $sort10 !== 'desc') {
+        $sort10 = ''; 
+    }
+}
+$sort11 = '';
+if (isset($_GET['sort11'])) {
+    $sort11 = sanitize($conn, $_GET['sort11']);
+    if ($sort11 !== 'asc' && $sort11 !== 'desc') {
+        $sort11 = ''; 
+    }
+}
+$sort12 = '';
+if (isset($_GET['sort12'])) {
+    $sort12 = sanitize($conn, $_GET['sort12']);
+    if ($sort12 !== 'asc' && $sort12 !== 'desc') {
+        $sort12 = ''; 
+    }
+}
+$sort13 = '';
+if (isset($_GET['sort13'])) {
+    $sort13 = sanitize($conn, $_GET['sort13']);
+    if ($sort13 !== 'asc' && $sort13 !== 'desc') {
+        $sort13 = ''; 
+    }
+}
 $query1 = "SELECT * FROM eoi";
+if (!empty($sort)) {
+    $query1 .= " ORDER BY EOInumber $sort";
+}
+elseif (!empty($sort2)) {
+    $query1 .= " ORDER BY JobReferenceNumber $sort2";
+}
+elseif (!empty($sort3)) {
+    $query1 .= " ORDER BY FirstName $sort3";
+}
+elseif (!empty($sort4)) {
+    $query1 .= " ORDER BY LastName $sort4";
+}
+elseif (!empty($sort5)) {
+    $query1 .= " ORDER BY DOB $sort5";
+}
+elseif (!empty($sort6)) {
+    $query1 .= " ORDER BY gender $sort6";
+}
+elseif (!empty($sort7)) {
+    $query1 .= " ORDER BY Address $sort7";
+}
+elseif (!empty($sort8)) {
+    $query1 .= " ORDER BY Suburb $sort8";
+}
+elseif (!empty($sort9)) {
+    $query1 .= " ORDER BY State $sort9";
+}
+elseif (!empty($sort10)) {
+    $query1 .= " ORDER BY Postcode $sort10";
+}
+elseif (!empty($sort11)) {
+    $query1 .= " ORDER BY Email $sort11";
+}
+elseif (!empty($sort12)) {
+    $query1 .= " ORDER BY PhoneNumber $sort12";
+}
+elseif (!empty($sort13)) {
+    $query1 .= " ORDER BY Status $sort13";
+}
 $result1 = mysqli_query($conn, $query1);
 
 if (isset($_GET['position'])) {
@@ -61,19 +194,21 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
         <br>
         <table class="manage_table">
             <tr>
-                <th id="manage_th">EOInumber</th>
-                <th id="manage_th">Job Reference Number</th>
-                <th id="manage_th">First Name</th>
-                <th id="manage_th">Last Name</th>
-                <th id="manage_th">Street Address</th>
-                <th id="manage_th">Suburb/Town</th>
-                <th id="manage_th">State</th>
-                <th id="manage_th">Postcode</th>
-                <th id="manage_th">Email Address</th>
-                <th id="manage_th">Phone Number</th>
+                <th id="manage_th"><a href="?sort=<?php echo $sort === 'asc' ? 'desc' : 'asc'; ?>">EOInumber</a></th>
+                <th id="manage_th"><a href="?sort2=<?php echo $sort2 === 'asc' ? 'desc' : 'asc'; ?>">Job Reference Number</a></th>
+                <th id="manage_th"><a href="?sort3=<?php echo $sort3 === 'asc' ? 'desc' : 'asc'; ?>">First Name</a></th>
+                <th id="manage_th"><a href="?sort4=<?php echo $sort4 === 'asc' ? 'desc' : 'asc'; ?>">Last Name</a></th>
+                <th id="manage_th"><a href="?sort5=<?php echo $sort5 === 'asc' ? 'desc' : 'asc'; ?>">Date of Birth</th>
+				<th id="manage_th"><a href="?sort6=<?php echo $sort6 === 'asc' ? 'desc' : 'asc'; ?>">Gender</th>
+				<th id="manage_th"><a href="?sort7=<?php echo $sort7 === 'asc' ? 'desc' : 'asc'; ?>">Street Address</th>
+                <th id="manage_th"><a href="?sort8=<?php echo $sort8 === 'asc' ? 'desc' : 'asc'; ?>">Suburb/Town</th>
+                <th id="manage_th"><a href="?sort9=<?php echo $sort9 === 'asc' ? 'desc' : 'asc'; ?>">State</th>
+                <th id="manage_th"><a href="?sort10=<?php echo $sort10=== 'asc' ? 'desc' : 'asc'; ?>">Postcode</th>
+                <th id="manage_th"><a href="?sort11=<?php echo $sort11 === 'asc' ? 'desc' : 'asc'; ?>">Email Address</th>
+                <th id="manage_th"><a href="?sort12=<?php echo $sort12 === 'asc' ? 'desc' : 'asc'; ?>">Phone Number</th>
                 <th id="manage_th">Skills</th>
                 <th id="manage_th">Other Skills</th>
-                <th id="manage_th">Status</th>
+                <th id="manage_th"><a href="?sort13=<?php echo $sort13 === 'asc' ? 'desc' : 'asc'; ?>">Status</th>
             </tr>
             <?php while ($row = mysqli_fetch_assoc($result1)) { ?>
                 <tr>
@@ -81,6 +216,8 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
                     <td id="manage_td"><?php echo $row['JobReferenceNumber']; ?></td>
                     <td id="manage_td"><?php echo $row['FirstName']; ?></td>
                     <td id="manage_td"><?php echo $row['LastName']; ?></td>
+					<td id="manage_td"><?php echo $row['DOB']; ?></td>
+					<td id="manage_td"><?php echo $row['gender']; ?></td>
                     <td id="manage_td"><?php echo isset($row['Address']) ? $row['Address'] : ''; ?></td>
                     <td id="manage_td"><?php echo isset($row['Suburb']) ? $row['Suburb'] : ''; ?></td>
                     <td id="manage_td"><?php echo isset($row['State']) ? $row['State'] : ''; ?></td>
@@ -134,7 +271,9 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
                 <th id="manage_th">Job Reference Number</th>
                 <th id="manage_th">First Name</th>
                 <th id="manage_th">Last Name</th>
-                <th id="manage_th">Street Address</th>
+                <th id="manage_th">Date of Birth</th>
+				<th id="manage_th">Gender</th>
+				<th id="manage_th">Street Address</th>
                 <th id="manage_th">Suburb/Town</th>
                 <th id="manage_th">State</th>
                 <th id="manage_th">Postcode</th>
@@ -150,6 +289,8 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
                     <td id="manage_td"><?php echo $row['JobReferenceNumber']; ?></td>
                     <td id="manage_td"><?php echo $row['FirstName']; ?></td>
                     <td id="manage_td"><?php echo $row['LastName']; ?></td>
+					<td id="manage_td"><?php echo $row['DOB']; ?></td>
+					<td id="manage_td"><?php echo $row['gender']; ?></td>
                     <td id="manage_td"><?php echo isset($row['Address']) ? $row['Address'] : ''; ?></td>
                     <td id="manage_td"><?php echo isset($row['Suburb']) ? $row['Suburb'] : ''; ?></td>
                     <td id="manage_td"><?php echo isset($row['State']) ? $row['State'] : ''; ?></td>
@@ -204,7 +345,9 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
                 <th id="manage_th">Job Reference Number</th>
                 <th id="manage_th">First Name</th>
                 <th id="manage_th">Last Name</th>
-                <th id="manage_th">Street Address</th>
+                <th id="manage_th">Date of Birth</th>
+				<th id="manage_th">Gender</th>
+				<th id="manage_th">Street Address</th>
                 <th id="manage_th">Suburb/Town</th>
                 <th id="manage_th">State</th>
                 <th id="manage_th">Postcode</th>
@@ -220,6 +363,8 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
                     <td id="manage_td"><?php echo $row['JobReferenceNumber']; ?></td>
                     <td id="manage_td"><?php echo $row['FirstName']; ?></td>
                     <td id="manage_td"><?php echo $row['LastName']; ?></td>
+					<td id="manage_td"><?php echo $row['DOB']; ?></td>
+					<td id="manage_td"><?php echo $row['gender']; ?></td>
                     <td id="manage_td"><?php echo isset($row['Address']) ? $row['Address'] : ''; ?></td>
                     <td id="manage_td"><?php echo isset($row['Suburb']) ? $row['Suburb'] : ''; ?></td>
                     <td id="manage_td"><?php echo isset($row['State']) ? $row['State'] : ''; ?></td>
@@ -302,4 +447,3 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
 <?php
 mysqli_close($conn);
 ?>
-
