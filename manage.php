@@ -1,9 +1,30 @@
 <?php
+
+session_start();
+
+// Check if the user is not logged in
+if (!isset($_SESSION['username'])) {
+    header("Location: manage_login.php"); // Redirect to the login page
+    exit(); // Stop further execution of the script
+}
+
 require_once("settings.php");
 $conn = mysqli_connect($host, $user, $pwd, $sql_db);
 
 if (!$conn) {
     die('Failed to connect to the database: ' . mysqli_connect_error());
+}
+
+$query = "SHOW TABLES LIKE 'eoi'";
+$result = mysqli_query($conn, $query);
+
+if (mysqli_num_rows($result) === 0) {
+    // The "eoi" table does not exist
+    // Handle the situation gracefully, e.g., display a message
+    echo "No EOI table found.";
+} else {
+    // The "eoi" table exists, continue with your code
+    // Rest of your code for the "manage.php" page
 }
 
 function sanitize($connection, $data) {
