@@ -446,8 +446,8 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
             <label for="status">Status:</label>
             <select name="status" id="status" class="manage_drop_menu">
                 <option value="New">New</option>
-                <option value="Current">Current</option>
-                <option value="Final">Final</option>
+                <option value="Approved">Approved</option>
+                <option value="Denied">Denied</option>
             </select>
             <input type="submit" value="Change">
         </form>
