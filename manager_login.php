@@ -51,7 +51,9 @@ mysqli_close($conn);
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>Manager Login</h1>
+    <h1 id="manage_heading">Manager Login</h1>
+
+    <hr>
 
     <?php if (isset($_SESSION['registrationSuccess']) && $_SESSION['registrationSuccess']) { ?>
         <p>Registration successful. You can now login.</p>
@@ -62,20 +64,17 @@ mysqli_close($conn);
         <p><?php echo $loginError; ?></p>
     <?php } ?>
 
-    <h2>Login</h2>
-    <form method="POST" action="">
-        <label for="username">Username:</label>
-        <input type="text" name="username" id="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required>
-        <br>
+    <h2 id="manage_mini_headings_login">Login:</h2>
+    <form method="POST" action="" id="manage_form_login" class="manage_input_color">
+        <label for="username" id="manage_label_login">Username:</label>
+        <input type="text" name="username" id="username" class="manage_drop_menu" required>
+        <br><br>
+        <label for="password" id="manage_label_login">Password:</label>
+        <input type="password" name="password" id="password"required>
+        <br><br>
         <input type="submit" name="login" value="Login">
-		<a href="regmanager.php"><button type="button">Register</button></a>
-		
+        <br><br>
+        <a href="regmanager.php"><button type="button">Register</button></a>
     </form>
 </body>
 </html>
-
-
-	
