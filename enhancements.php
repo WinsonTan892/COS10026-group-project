@@ -1,4 +1,9 @@
 <?php include 'common.inc'; ?>
+<title>Enhancements</title>
+</head>
+<body>
+<?php include 'nav.inc'; ?>
+	
   <div class="enhancement-container">
 
     <h2>List of enhancements</h2>
