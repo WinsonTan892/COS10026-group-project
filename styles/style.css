@@ -908,7 +908,6 @@ input[type=submit]:hover {
 /*For manage.php page*//*For manage.php page*//*For manage.php page*//*For manage.php page*/
 
 
-
 #manage_heading {
   font-size: 56px;
   color: darkblue;
@@ -917,7 +916,9 @@ input[type=submit]:hover {
 #manage_mini_headings {
   font-size: 30px;
   color: darkblue;
+  
 }
+
 
 .manage_table {
   width: 100%;
@@ -937,6 +938,7 @@ input[type=submit]:hover {
 
 #manage_form {
   margin-bottom: 20px;
+  
 }
 
 #manage_label {
@@ -946,6 +948,7 @@ input[type=submit]:hover {
 
 #manage_form_inputs input[type="text"],
 #manage_form_inputs input[type="submit"],
+#manage_form_inputs input[type="password"],
 #manage_form_inputs select {
   padding: 5px;
   width: 200px;
@@ -972,7 +975,25 @@ input[type=submit]:hover {
   width: 20%;
 }
 
+.manage_input_color input[type="password"] {
+  background-color: lightblue;
+  width: 20%;
+}
+
 .manage_drop_menu {
-  width: 7.5%;
+  width: 20%;
   background-color: lightgrey;
+  
+}
+
+#manage_form_login {
+  margin-bottom: 20px;
+  
+  position:relative; left:30%; top:0px;
+}
+
+#manage_mini_headings_login {
+  font-size: 30px;
+  color: darkblue;
+  text-indent: 30%;
 }
