@@ -901,3 +901,78 @@ input[type=submit]:hover {
 /*For apply.html page*//*For apply.html page*//*For apply.html page*//*For apply.html page*/
 /*For apply.html page*//*For apply.html page*//*For apply.html page*//*For apply.html page*/
 /*For apply.html page*//*For apply.html page*//*For apply.html page*//*For apply.html page*/
+
+/*For manage.php page*//*For manage.php page*//*For manage.php page*//*For manage.php page*/
+/*For manage.php page*//*For manage.php page*//*For manage.php page*//*For manage.php page*/
+/*For manage.php page*//*For manage.php page*//*For manage.php page*//*For manage.php page*/
+/*For manage.php page*//*For manage.php page*//*For manage.php page*//*For manage.php page*/
+
+
+
+#manage_heading {
+  font-size: 56px;
+  color: darkblue;
+}
+
+#manage_mini_headings {
+  font-size: 30px;
+  color: darkblue;
+}
+
+.manage_table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+#manage_th {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+#manage_td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+#manage_form {
+  margin-bottom: 20px;
+}
+
+#manage_label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#manage_form_inputs input[type="text"],
+#manage_form_inputs input[type="submit"],
+#manage_form_inputs select {
+  padding: 5px;
+  width: 200px;
+}
+
+#manage_form_inputs input[type="submit"] {
+  cursor: pointer;
+}
+
+#manage_form_inputs button[type="button"] {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#manage_form_inputs button[type="button"]:hover {
+  background-color: #555;
+}
+
+.manage_input_color input[type="text"] {
+  background-color: lightblue;
+  width: 20%;
+}
+
+.manage_drop_menu {
+  width: 7.5%;
+  background-color: lightgrey;
+}
