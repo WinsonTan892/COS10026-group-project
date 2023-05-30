@@ -2,7 +2,7 @@
 
 session_start();
 
-
+// Checks whether user is logged in. if not, redirect to the manager login page
 if (!isset($_SESSION['username'])) {
     header("Location: manager_login.php"); 
     exit(); 
@@ -17,12 +17,12 @@ if (!$conn) {
 
 $query = "SHOW TABLES LIKE 'eoi'";
 $result = mysqli_query($conn, $query);
-
+// Checks whether a table was collected from the database. If not, return a statement
 if (mysqli_num_rows($result) === 0) {
     echo "No EOI table found.";
 } else {
 }
-
+// Function that is called to sanitise data
 function sanitize($connection, $data) {
     $data = trim($data);
     $data = mysqli_real_escape_string($connection, $data);
@@ -35,6 +35,7 @@ $deleteRefNumber = '';
 $eoiId = '';
 $status = '';
 
+// Used to sort data in ascending or descending order depending on which column header was clicked.
 $sort = '';
 if (isset($_GET['sort'])) {
     $sort = sanitize($conn, $_GET['sort']);
@@ -171,24 +172,29 @@ elseif (!empty($sort13)) {
 }
 $result1 = mysqli_query($conn, $query1);
 
+// Used for Searching for data
+// Construct a query to retrieve data based on the Job Reference Number and execute it
 if (isset($_GET['position'])) {
     $position = sanitize($conn, $_GET['position']);
     $query2 = "SELECT * FROM eoi WHERE JobReferenceNumber = '$position'";
     $result2 = mysqli_query($conn, $query2);
 }
 
+// Construct a query to retrieve data based on first or last name and execute it
 if (isset($_GET['applicant'])) {
     $applicant = sanitize($conn, $_GET['applicant']);
     $query3 = "SELECT * FROM eoi WHERE FirstName LIKE '%$applicant%' OR LastName LIKE '%$applicant%'";
     $result3 = mysqli_query($conn, $query3);
 }
-
+//Used for deleting data
+// Construct query to delete data based on job reference number
 if (isset($_GET['delete'])) {
     $deleteRefNumber = sanitize($conn, $_GET['delete']);
     $query4 = "DELETE FROM eoi WHERE JobReferenceNumber = '$deleteRefNumber'";
     $result4 = mysqli_query($conn, $query4);
 }
-
+//Used for changing EOI status
+// Construct query to update eoi entry status based on EOInumber
 if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
     $eoiId = sanitize($conn, $_GET['eoi_id']);
     $status = sanitize($conn, $_GET['status']);
@@ -205,10 +211,12 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+	
     <h1 id="manage_heading">Manage EOIs</h1>
     <h2 id="manage_mini_headings">List all EOIs:</h2>
     <?php if (mysqli_num_rows($result1) > 0) { ?>
         <br>
+	<!-- List all EOIs that can be collected from a table -->
         <table class="manage_table">
             <tr>
 		<th id="manage_th"><a href="?sort=<?php echo $sort === 'asc' ? 'desc' : 'asc'; ?>">EOInumber</a></th>
@@ -270,7 +278,7 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
     <?php } else { ?>
         <p>No EOIs found.</p>
     <?php } ?>
-
+	
     <h2 id="manage_mini_headings">List all EOIs for a particular position</h2>
 
     <form method="GET" action="" id="manage_form" class="manage_input_color">
@@ -282,6 +290,7 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
 <?php if (isset($result2)) { ?>
     <?php if (mysqli_num_rows($result2) > 0) { ?>
         <br>
+	<!-- List all EOIs with the same job reference number that was inputted in the textbox under header "List all EOIs for a particular position" -->
         <table class="manage_table">
             <tr>
 		<th id="manage_th">EOInumber</th>
@@ -355,6 +364,7 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
 
     <?php if (isset($result3) && mysqli_num_rows($result3) > 0) { ?>
         <br>
+	<!-- List all EOIs with the same name that was inputted in the textbox under header "List all EOIs for a particular applicant" -->
         <table class="manage_table">
             <tr>
 		<th id="manage_th">EOInumber</th>
@@ -418,7 +428,7 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
     <?php } ?>
 
     <h2 id="manage_mini_headings">Delete all EOIs with a specified job reference number</h2>
-   
+   	<!-- Delete the EOI that has the same job reference number as the one inputted into the textbox -->
         <form method="GET" action="" id="manage_form" class="manage_input_color">
             <label  for="delete" id="manage_label">Job Reference Number:</label>
             <input type="text" name="delete" id="delete">
@@ -434,7 +444,7 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
     <?php } ?>
 
     <h2 id="manage_mini_headings">Change the Status of an EOI</h2>
-
+	<!-- Change the status of the EOI entry -->
         <form method="GET" action="" id="manage_form" class="manage_input_color">
             <label for="eoi_id">EOI ID:</label>
             <input type="text" name="eoi_id" id="eoi_id">
