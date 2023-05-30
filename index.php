@@ -43,6 +43,11 @@
         <div class="jrightbox"><h2>Cybersecurity Analyst</h2><p>The role of a Cybersecurity Analyst within our company generally revolves around safeguarding the information systems and networks of a client's organization from cyber threats. Similarly to the job position: Software Engineer, there are many responsibilities and requirements for this position.</p><a href = "jobs.html"><button class="jbutton jbutton1" >View more information here!</button></a></div>
         
       </p>
+      <p>
+         <div class="jleftbox">
+             <a href="manage_login.php"><button class="jbutton1 jbutton">Manager Login</button></a>
+         </div>
+      </p>
 
        <!-- this makes a footer at the bottom of the page -->
       <div class = "jfloat-bottom"><footer>Silicon Valley Season 5 Inc. </footer></div>
