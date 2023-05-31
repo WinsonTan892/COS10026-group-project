@@ -144,8 +144,6 @@
             <li>He unironically relates to Dostoevsky's Underground Man and thinks that Gogol's The Overcoat is the greatest short story ever written.</li>
         </ul>
     </div>
-    <div class="float-bottom">
-	<footer> Silicon Valley Season 5 Inc. </footer>
-	</div>
+    <?php include 'footer.inc'; ?>
   </body>
 </html>
