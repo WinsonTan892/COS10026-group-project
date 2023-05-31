@@ -2,7 +2,7 @@
 <title>Index</title>
 </head>
 <body>
-<?php include 'nav.inc'; ?>
+<?php include 'menu.inc'; ?>
 	
         <!-- This is the company logo image and the center box for the company statement-->
      <div class="jcenterimg">
