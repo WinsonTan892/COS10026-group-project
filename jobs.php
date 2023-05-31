@@ -87,9 +87,7 @@
 To pursue a career in software engineering or cybersecurity here in Silicon Valley Season 5 (SVS5), one should consider enrolling in a degree program, attending industry conferences, or joining online communities, as they can provide valuable experience and networking opportunities. With hard work and dedication, individuals can embark on a fulfilling career in these dynamic fields within our company. <br>
 		For more information regarding the available job positions we are offering, speak to any of our staff members. Contact information can be found on the "About Us" Page.<br><br><br><br><br></aside>	
 	</div>
-	<div class="float-bottom">
-	<footer> Silicon Valley Season 5 Inc. </footer>
-	</div>
+	<?php include 'footer.inc'; ?>
 </div>
 </body>
 
