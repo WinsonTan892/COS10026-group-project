@@ -2,7 +2,7 @@
 <title>Apply</title>
 </head>
 <body>
-<?php include 'nav.inc'; ?>
+<?php include 'menu.inc'; ?>
 		
 		<div class="apply">
 			<div class="header-container">
