@@ -1,4 +1,4 @@
-<?php include 'common.inc'; ?>
+<?php include 'header.inc'; ?>
     <title>Application Confirmation</title>
   </head>
   <body>
