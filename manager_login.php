@@ -43,12 +43,8 @@ if (isset($_POST['login'])) {
 
 mysqli_close($conn);
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
+<?php include 'header.inc'; ?>
     <title>Manager Login</title>
-    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <h1 id="manage_heading">Manager Login</h1>
