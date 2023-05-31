@@ -2,7 +2,7 @@
 <title>Enhancements</title>
 </head>
 <body>
-<?php include 'nav.inc'; ?>
+<?php include 'menu.inc'; ?>
 	
   <div class="enhancement-container">
 
