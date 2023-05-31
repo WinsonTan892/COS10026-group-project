@@ -2,7 +2,7 @@
 <title>About</title>
 </head>
 <body>
-<?php include 'nav.inc'; ?>
+<?php include 'menu.inc'; ?>
 
     <div class="header-container">
         <h1>About Us</h1>
