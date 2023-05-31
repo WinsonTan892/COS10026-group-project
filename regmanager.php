@@ -79,6 +79,7 @@ mysqli_close($conn);
         <br><br>
 		<a href="manager_login.php"><button type="button">Go Back</button></a>
     </form>
+<?php include 'footer.inc'; ?>
 </body>
 </html>
 
