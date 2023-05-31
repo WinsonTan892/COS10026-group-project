@@ -1,4 +1,4 @@
-<?php include 'common.inc'; ?>
+<?php include 'header.inc'; ?>
 <title>Jobs</title>
 </head>
 <body>
