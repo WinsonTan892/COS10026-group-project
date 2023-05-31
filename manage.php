@@ -466,7 +466,7 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
             <p>Failed to update the status. Please check the EOI ID.</p>
         <?php } ?>
     <?php } ?>
-
+	<?php include 'footer.inc'; ?>
 </body>
 </html>
 
