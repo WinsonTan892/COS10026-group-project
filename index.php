@@ -50,6 +50,6 @@
       </p>
 
        <!-- this makes a footer at the bottom of the page -->
-      <div class = "jfloat-bottom"><footer>Silicon Valley Season 5 Inc. </footer></div>
+      <?php include 'footer.inc'; ?>
         </body>
 </HTML>
