@@ -13,10 +13,11 @@
           <h3>Manager login control</h3>
           <ul>
           <li>Login controls would be considered vital due to it drastically improving the privacy and security of staff details and job applicants data. </li>
-          <li><a href="manager_login.php">Hyper link to enhancement.</a></li> 
+          <li><a href="manager_login.php">Hyperlink to enhancement.</a></li> 
           <li>When a user trys to direclty access the manager.php page and has not logged in before, the page will redirect the user to the manager_login.php page.</li>
           <li>This is achieved by cheacking whether the user has entered a username during the session, if not, the page will redirect the user to the manager_login.php page.</li>
-          <li><a href="manage.php">hyperlink to enhancement</a></li>
+          <li>Reference used: https://www.simplilearn.com/tutorials/php-tutorial/php-login-form#step_3_create_a_database_table_using_mysql</li>
+          <li><a href="manage.php">Hyperlink to enhancement</a></li>
           </ul>
         </div>
       </div>
@@ -29,8 +30,9 @@
           <ul>
             <li>The ability to sort and order elements inside the EOI table go above and beyond the requirments, enabling users to better navigate and filter applicants for the potential job openings. </li>
             <li>When a header is first clicked it will order the the data relating to the header in descending order, if clicked again it will then sort the data in ascending order. </li>
-	          <li>this was implemented by creating a series of if statments, checking to see which header was clicked and thus which ordering query should be made while also checking to see if it should be ascending or descending.</li>
-            <li><a href="manage.php">hyperlink to enhancement</a></li>
+	    <li>this was implemented by creating a series of if statments, checking to see which header was clicked and thus which ordering query should be made while also checking to see if it should be ascending or descending.</li>
+	    <li>Reference used: https://codeshack.io/how-to-sort-table-columns-php-mysql/</li>
+            <li><a href="manage.php">Hyperlink to enhancement</a></li>
           </ul>
         </div>
       </div>
