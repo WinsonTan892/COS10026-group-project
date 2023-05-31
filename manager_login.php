@@ -76,5 +76,6 @@ mysqli_close($conn);
         <br><br>
         <a href="regmanager.php"><button type="button">Register</button></a>
     </form>
+    <?php include 'footer.inc'; ?>
 </body>
 </html>
