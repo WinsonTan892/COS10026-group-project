@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<?php include 'common.inc'; ?>
     <title>Application Confirmation</title>
   </head>
   <body>
@@ -246,5 +243,6 @@ if (isset($_POST["otherskills"])) {
       }
     
 ?>
+    <?php include 'footer.inc'; ?>
   </body>
 </html>
