@@ -2,7 +2,7 @@
 <title>Jobs</title>
 </head>
 <body>
-<?php include 'nav.inc'; ?>
+<?php include 'menu.inc'; ?>
 
 	 <section>
 	 <div class="container">
