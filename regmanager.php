@@ -50,12 +50,8 @@ if (isset($_POST['register'])) {
 
 mysqli_close($conn);
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
+<?php include 'header.inc'; ?>
     <title>Manager Registration</title>
-    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <h1 id="manage_heading">Manager Registration</h1>
