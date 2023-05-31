@@ -45,7 +45,7 @@
       </p>
       <p>
          <div class="jleftbox">
-             <a href="manage_login.php"><button class="jbutton1 jbutton">Manager Login</button></a>
+             <a href="manager_login.php"><button class="jbutton1 jbutton">Manager Login</button></a>
          </div>
       </p>
 
