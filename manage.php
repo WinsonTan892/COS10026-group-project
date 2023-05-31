@@ -1,3 +1,4 @@
+<?php include 'header.inc'; ?>
 <?php
 
 session_start();
@@ -202,8 +203,6 @@ if (isset($_GET['eoi_id']) && isset($_GET['status'])) {
     $result5 = mysqli_query($conn, $query5);
 }
 ?>
-
-<?php include 'header.inc'; ?>
     <title>Manage EOIs</title>
 </head>
 <body>
