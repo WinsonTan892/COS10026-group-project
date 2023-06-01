@@ -142,17 +142,6 @@ if (isset($_POST["otherskills"])) {
     ) ENGINE=InnoDB DEFAULT CHARSET=latin1";
 
   $conn->query($sql);
-  
-  $sql = "INSERT INTO eoi (EOInumber, jobreferencenumber, firstname, lastname, DOB, gender, address, suburb, state, postcode, email, phonenumber, teamwork, problemsolving, leadership, nsc, os, otherskills)
-  VALUES ('$uniqueNumber','$JRN','$firstname', '$lastname', '$DOB', '$gender', '$address', '$suburb', '$state', '$postcode', '$email', '$phonenumber', '$teamwork', '$problemsolving', '$leadership', '$nsc', '$os', '$otherskills')";
-  
-  if ($conn->query($sql) === TRUE) {
-    $id = $conn->insert_id;
-  } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-  }
-  
-  $conn->close();
 
     $errmsg = "";
 
@@ -238,8 +227,17 @@ if (isset($_POST["otherskills"])) {
         echo "<p>$errmsg</p>";
       }
       else {  
-        echo "Success!<br>";
-        echo "Your EOInumber: " . $uniqueNumber;
+        $sql = "INSERT INTO eoi (EOInumber, jobreferencenumber, firstname, lastname, DOB, gender, address, suburb, state, postcode, email, phonenumber, teamwork, problemsolving, leadership, nsc, os, otherskills)
+                VALUES ('$uniqueNumber','$JRN','$firstname', '$lastname', '$DOB', '$gender', '$address', '$suburb', '$state', '$postcode', '$email', '$phonenumber', '$teamwork', '$problemsolving', '$leadership', '$nsc', '$os', '$otherskills')";
+  
+        if ($conn->query($sql) === TRUE) {
+          $id = $conn->insert_id;
+          echo "Success!<br>";
+          echo "Your EOInumber: " . $uniqueNumber;
+        } else {
+          echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+        $conn->close();
       }
     
 ?>
