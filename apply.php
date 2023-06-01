@@ -10,12 +10,12 @@
 				<h1 id="title"> Application Form</h1>
 			</div>
 			
-			<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+			<form method="post" novalidate action="processEOI.php">
 
 				<div class="JRN-row">
 					<div>
-						<label for="job-reference-number">Job reference number:</label><br>
-						<input name="job-reference-number" id="job-reference-number" type="text" placeholder="Enter job reference number" pattern="[a-zA-Z0-9]{5}" required>
+						<label for="JRN">Job reference number:</label><br>
+						<input name="JRN" id="JRN" type="text" placeholder="Enter job reference number" pattern="[a-zA-Z0-9]{5}" required>
 					</div>
 					<img src="images/office2.jpg" alt="Office meeting.">
 				</div>
@@ -28,19 +28,19 @@
 
 				<div class="row">
 					<div class="detail-column">
-						<label for="first-name">First name:</label><br>
+						<label for="firstname">First name:</label><br>
 					</div>
 					<div class="input-column">
-						<input name="first-name" id="first-name" type="text" placeholder="Enter your first name" pattern="[a-zA-Z]{0,20}" required>
+						<input name="firstname" id="firstname" type="text" placeholder="Enter your first name" pattern="[a-zA-Z]{0,20}" required>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="detail-column">	
-						<label for="last-name">Last name:</label><br>
+						<label for="lastname">Last name:</label><br>
 					</div>
 					<div class="input-column">
-						<input name="last-name" id="last-name" type="text" placeholder="Enter your last name" pattern="[a-zA-Z]{0,20}" required>
+						<input name="lastname" id="lastname" type="text" placeholder="Enter your last name" pattern="[a-zA-Z]{0,20}" required>
 					</div>
 				</div>
 
@@ -61,7 +61,7 @@
 						<fieldset>
 							<legend>Gender</legend>
 							<label for="male"><input id="male" type="radio" name="gender" value="male" required>Male</label><br>
-							<label for="female"><input id="female" type="radio" name="gender" value="Female">Female</label><br>
+							<label for="female"><input id="female" type="radio" name="gender" value="female">Female</label><br>
 							<label for="unspecified"><input id="unspecified" type="radio" name="gender" value="unspecified">Unspecified</label><br>
 						</fieldset>
 					</div>
@@ -127,10 +127,10 @@
 					
 				<div class="row">
 					<div class="detail-column">
-						<label for="phone-number">Phone number:</label><br>
+						<label for="phonenumber">Phone number:</label><br>
 					</div>
 					<div class="input-column">
-						<input name="phone-number" id="phone-number" type="text" pattern="[0-9\s]{8,12}" placeholder="Enter your phone number" required>
+						<input name="phonenumber" id="phonenumber" type="text" pattern="[0-9\s]{8,12}" placeholder="Enter your phone number" required>
 					</div>
 				</div>
 
@@ -154,10 +154,10 @@
 				</div>
 				<div class="row">
 					<div class="detail-column">
-						<label for="other-skills">Other Skills:</label>
+						<label for="otherskills">Other Skills:</label>
 					</div>
 					<div class="input-column">
-						<textarea name="other-skills" id="other-skills" rows="4" cols="40" placeholder="E.g I am adaptable, a fast critical thinker, etc."></textarea>
+						<textarea name="otherskills" id="otherskills" rows="4" cols="40" placeholder="E.g I am adaptable, a fast critical thinker, etc."></textarea>
 					</div>
 				</div>
 				
@@ -171,6 +171,7 @@
 				</div>
 				
 			</form>
+
 			<?php include 'footer.inc'; ?>
 		</div>
 	</body>
