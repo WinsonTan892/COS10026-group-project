@@ -32,7 +32,7 @@
            </div>
            <div class="jboxleft">
              <h2>Team Video link</h2>
-             <a href = "https://www.youtube.com/watch?v=KSpItLqEXoU"><button class="jbutton1 jbutton">Watch Here!</button></a>
+             <a href = "https://youtu.be/0sN2oQvPRT0"><button class="jbutton1 jbutton">Watch Here!</button></a>
            </div>
         </p>
       </div>
